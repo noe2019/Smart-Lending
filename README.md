@@ -2,4 +2,4 @@
 
 Welcome to the project! Watch the demo below:
 
-![Overview dashboard of the project](Smart-Lending/images/loan.gif)
+![Smart-Lending/images/](https://github.com/noe2019/Smart-Lending/blob/main/images/loan.gif)
