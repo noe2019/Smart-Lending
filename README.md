@@ -5,9 +5,7 @@
 
 ## Introduction
 
-This project involves an in-depth analysis of the `financial_loan.csv` dataset, which contains information related to loan applications, approvals, and performances at a financial institution. As a data analyst, the primary aim is to extract actionable insights that will inform decision-making processes, optimize risk management, and enhance overall customer satisfaction.
-
-The analysis covers various aspects, including customer demographics, loan performance, risk assessment, profitability, and operational efficiency. By leveraging this dataset, the goal is to understand patterns and trends that impact the bank's loan portfolio, identify potential areas for improvement, and develop strategies to mitigate risks associated with loan defaults.
+This banking institution would like to assess two things: (1) Understand the demographics of its loan portfolio; (2) Assess its loan portfolio heatlh; (3) Automate the decision on future loan applications. By leveraging this dataset, the goal is to understand patterns and trends that impact the bank's loan portfolio, identify potential areas for improvement, and develop strategies to mitigate risks associated with loan defaults.
 
 ## Table of Contents
 
@@ -150,23 +148,92 @@ The dataset was collected from the bank's internal systems, which record every l
 4. **Variability in Borrowing:** There is a stark contrast in the number of borrowers between the top and bottom states, with California having more than 2,000 times the number of borrowers compared to Maine.
 5. **Policy Implications:** This disparity could highlight areas needing targeted economic support or improved access to financial services to stimulate borrowing and economic growth.
 
-### Loan Performance
+## Top 10 and Bottom 10 States by amount borrowed
+
+| Rank | Top 10 States      | Total Loan Amount (in millions) | Bottom 10 States | Total Loan Amount (in thousands) |
+|------|--------------------|---------------------------------|------------------|----------------------------------|
+| 1    | California (CA)    | $78.48                          | Maine (ME)       | $9.20                             |
+| 2    | New York (NY)      | $42.08                          | Nebraska (NE)    | $31.70                            |
+| 3    | Texas (TX)         | $31.24                          | Iowa (IA)        | $56.45                            |
+| 4    | Florida (FL)       | $30.05                          | Idaho (ID)       | $59.75                            |
+| 5    | New Jersey (NJ)    | $21.66                          | Indiana (IN)     | $86.23                            |
+| 6    | Illinois (IL)      | $17.12                          | Mississippi (MS) | $139.13                           |
+| 7    | Virginia (VA)      | $15.98                          | Tennessee (TN)   | $162.18                           |
+| 8    | Pennsylvania (PA)  | $15.83                          | Vermont (VT)     | $504.10                           |
+| 9    | Georgia (GA)       | $15.48                          | South Dakota (SD)| $606.15                           |
+| 10   | Massachusetts (MA) | $15.05                          | Montana (MT)     | $829.53                           |
+
+### Key Insights
+
+1. **Significant Disparities**: The loan amounts in the top states are orders of magnitude higher than those in the bottom states, highlighting economic disparities that mirror population and developmental differences across the regions.
+2. **Economic Concentration**: The largest loan amounts are concentrated in states known as economic powerhouses with large populations, such as California and New York.
+3. **Opportunities for Growth**: The lower loan amounts in states like Maine and Nebraska might indicate under-served markets or areas where economic growth can be stimulated through increased lending and financial services.
+4. **Strategic Targeting**: Financial institutions may find strategic value in targeting under-served states with tailored financial products and services that cater to the unique needs of these regions.
+5. **Policy Implications**: These insights could be critical for policymakers when considering measures to encourage economic equality and improve access to financial resources across all states.
+
+### Loan Portfolio Health Assessment
 
 Analyze the performance of different loan types and identify factors influencing loan success.
 
-### Default Rates
+### Loan Status Distribution
 
-Examine default rates across various segments and identify patterns related to defaults.
+## Loan Status Distribution Analysis
 
-## Risk Assessment
+### Distribution Table
 
-### Credit Score Analysis
+| Loan Status  | Number of Loans | Proportion of Total Loans |
+|--------------|-----------------|---------------------------|
+| Fully Paid   | 32,145          | 83.33%                    |
+| Charged Off  | 5,333           | 13.82%                    |
+| Current      | 1,098           | 2.85%                     |
 
-Assess the distribution of credit scores and their impact on loan approvals and defaults.
+### Graphical Representation
 
-### Predictors of Default
+![Loan Status Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/loan_distribution.png)
 
-Identify key predictors of loan default using statistical models or machine learning algorithms.
+Replace `URL_to_image_here` with the actual URL where your image is hosted.
+
+### Key Insights
+
+1. **Dominance of Fully Paid Loans**: The majority of the loans, constituting approximately 83.33% of the portfolio, are Fully Paid. This indicates a healthy loan portfolio with a high rate of successful repayments.
+2. **Charged Off Loans**: About 13.82% of the loans are Charged Off, highlighting potential areas of credit risk within the portfolio. This proportion suggests that while most loans perform well, there is a notable fraction that results in losses.
+3. **Current Loans**: A smaller fraction, 2.85%, represents the loans that are currently active. This low percentage of current loans could indicate a mature portfolio where most loans have already been resolved.
+4. **Risk Management**: The proportion of Charged Off loans necessitates a review of risk assessment and credit management practices to reduce potential defaults.
+5. **Portfolio Growth and Health**: The significant number of Fully Paid loans suggests overall portfolio health but emphasizes the need for ongoing monitoring and adjustment of credit policies to sustain these results and manage the Charged Off rate.
+
+### Recommendations for Further Analysis
+
+- **Enhanced Credit Scoring Models**: Improve prediction accuracy for potential charge-offs using more advanced credit scoring models.
+- **Diversification Strategies**: Explore diversifying the types of loans offered to spread risk across different loan categories.
+- **Proactive Loan Management**: Implement proactive loan management strategies to identify and mitigate risks early for loans categorized under 'Current'.
+
+### Default Rate
+
+- **Importance**: Calculate the percentage of loans that have defaulted, which is a critical indicator of credit risk within the portfolio.
+
+### Delinquency Rate
+
+- **Purpose**: Assess the proportion of loans that are overdue, indicating potential future defaults and trends in borrower behavior.
+
+### Average Loan Amount
+
+- **Analysis**: Analyze the average loan amount to understand the portfolio's exposure and potential profitability impacts.
+
+### Interest Rate Analysis
+
+- **Strategy Assessment**: Evaluate the distribution of interest rates across the portfolio to assess pricing strategy and risk-adjusted returns.
+
+### Credit Score Distribution
+
+- **Risk Profile**: Examine the distribution of credit scores to understand the risk profile of borrowers and anticipate potential default rates.
+
+### Debt-to-Income (DTI) Ratio
+
+- **Borrower Analysis**: Analyze the average DTI ratio to assess borrowers' ability to repay loans, which can indicate financial stress or stability within the portfolio.
+
+### Recovery Rate
+
+- **Recovery Efficiency**: Determine the percentage of the principal amount recovered from defaulted loans, which helps in assessing the effectiveness of recovery efforts.
 
 ## Profitability Analysis
 
@@ -201,15 +268,3 @@ Use statistical methods to detect outliers and assess their impact on the datase
 ## Conclusion and Recommendations
 
 Summarize key findings from the analysis and propose actionable recommendations for the bank.
-
-## Future Work
-
-Outline potential areas for future analysis or further research that could build upon this work.
-
-## Acknowledgments
-
-Acknowledge any individuals, teams, or resources that contributed to the project.
-
-## References
-
-List any references or external resources used throughout the analysis.
