@@ -127,7 +127,28 @@ The dataset was collected from the bank's internal systems, which record every l
 
 ### Customer Demographics
 
-This analysis helps identify patterns and trends among different borrower segments.
+## Top 10 and Bottom 10 States by Number of Borrowers
+
+| Rank | Top 10 States      | Number of Borrowers | Bottom 10 States         | Number of Borrowers |
+|------|--------------------|---------------------|--------------------------|---------------------|
+| 1    | California         | 6,894               | Maine                    | 3                   |
+| 2    | New York           | 3,701               | Iowa                     | 5                   |
+| 3    | Florida            | 2,773               | Nebraska                 | 5                   |
+| 4    | Texas              | 2,664               | Idaho                    | 6                   |
+| 5    | New Jersey         | 1,822               | Indiana                  | 9                   |
+| 6    | Illinois           | 1,486               | Tennessee                | 17                  |
+| 7    | Pennsylvania       | 1,482               | Mississippi              | 19                  |
+| 8    | Virginia           | 1,375               | Vermont                  | 54                  |
+| 9    | Georgia            | 1,355               | South Dakota             | 63                  |
+| 10   | Massachusetts      | 1,310               | Alaska                   | 78                  |
+
+### Key Observations
+
+1. **Geographic Diversity:** The top borrowing states span across various U.S. regions, indicating widespread economic activity and access to credit facilities, whereas the bottom borrowing states are predominantly less populous and economically smaller.
+2. **Population Impact:** States with larger populations like California and New York dominate the top of the list, suggesting a direct correlation between population size and the number of borrowers.
+3. **Economic Factors:** The bottom states generally feature fewer borrowers, which may be influenced by lower levels of economic activity or smaller financial markets.
+4. **Variability in Borrowing:** There is a stark contrast in the number of borrowers between the top and bottom states, with California having more than 2,000 times the number of borrowers compared to Maine.
+5. **Policy Implications:** This disparity could highlight areas needing targeted economic support or improved access to financial services to stimulate borrowing and economic growth.
 
 ### Loan Performance
 
