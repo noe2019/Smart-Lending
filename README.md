@@ -76,24 +76,33 @@ The dataset consists of **38576 entries (rows)**. Each entry represents a unique
 
 The dataset includes the twenty four (24) features (columns):
 
-1. **Loan_ID**: Unique identifier for each loan application.
-2. **Customer_ID**: Unique identifier for each customer.
-3. **Loan_Amount**: The amount of money requested by the borrower.
-4. **Loan_Term**: The duration of the loan in months.
-5. **Interest_Rate**: The interest rate applied to the loan.
-6. **Loan_Type**: The type of loan (e.g., personal, mortgage, auto).
-7. **Application_Date**: The date when the loan application was submitted.
-8. **Approval_Status**: The status of the loan application (e.g., approved, rejected, pending).
-9. **Credit_Score**: The credit score of the applicant at the time of application.
-10. **Employment_Status**: The employment status of the applicant (e.g., employed, unemployed, self-employed).
-11. **Annual_Income**: The annual income of the applicant.
-12. **Age**: The age of the applicant.
-13. **Gender**: The gender of the applicant.
-14. **Marital_Status**: The marital status of the applicant.
-15. **Dependents**: The number of dependents the applicant has.
-16. **Region**: The geographical region where the applicant resides.
-17. **Loan_Purpose**: The purpose for which the loan is being sought (e.g., home improvement, debt consolidation).
-18. **Payment_History**: Historical record of payments made by the borrower.
+
+| Column Name             | Description                                                                                   | Data Type         |
+|-------------------------|-----------------------------------------------------------------------------------------------|-------------------|
+| **id**                  | A unique identifier for each loan record.                                                     | String/Alphanumeric|
+| **address_state**       | The U.S. state where the borrower resides.                                                    | Categorical       |
+| **application_type**    | Indicates whether the application is individual or joint.                                     | Categorical       |
+| **emp_length**          | The number of years the borrower has been employed at their current job.                      | Categorical/Numeric|
+| **emp_title**           | The job title of the borrower.                                                                | Categorical       |
+| **grade**               | The credit grade assigned to the borrower by the lender, reflecting creditworthiness.         | Categorical       |
+| **home_ownership**      | The home ownership status of the borrower.                                                    | Categorical       |
+| **issue_date**          | The date when the loan was issued.                                                            | DateTime          |
+| **last_credit_pull_date** | The date of the most recent credit check performed on the borrower.                          | DateTime          |
+| **last_payment_date**   | The date of the borrower's last loan payment.                                                 | DateTime          |
+| **loan_status**         | The current status of the loan.                                                               | Categorical       |
+| **next_payment_date**   | The scheduled date for the borrower's next loan payment.                                      | DateTime          |
+| **member_id**           | A unique identifier for the borrower.                                                         | String/Alphanumeric|
+| **purpose**             | The reason for which the loan is being taken out.                                             | Categorical       |
+| **sub_grade**           | A finer classification of the borrower's credit grade, providing more granularity.            | Categorical       |
+| **term**                | The length of time for the loan repayment period.                                             | Categorical       |
+| **verification_status** | Indicates whether the borrower’s income or employment details have been verified.             | Categorical       |
+| **annual_income**       | The annual income of the borrower at the time of the loan application.                        | Numeric (float)   |
+| **dti**                 | Debt-to-Income ratio, a measure of the borrower’s monthly debt payments divided by their gross monthly income. | Numeric (float) |
+| **installment**         | The fixed monthly payment amount for the loan.                                                | Numeric (float)   |
+| **int_rate**            | The interest rate applied to the loan.                                                        | Numeric (float)   |
+| **loan_amount**         | The total amount of money borrowed.                                                           | Numeric (float)   |
+| **total_acc**           | The total number of credit accounts the borrower has.                                         | Numeric (integer) |
+| **total_payment**       | The total amount paid by the borrower so far, including principal and interest.               | Numeric (float)   |
 
 #### Background Information
 
@@ -111,13 +120,35 @@ The primary goals of analyzing this dataset include:
 The dataset was collected from the bank's internal systems, which record every loan application and its related details. The data is anonymized to protect customer privacy and complies with data protection regulations.
 
 ### Data Cleaning and Preprocessing
-Most columns have zero missing values except for 'emp_title', which has 1,438 missing entries. All missing values (NaN) in the 'emp_title' column with the string "Unknown".
+- Most columns have zero missing values except for emp_title', which has 1,438 missing entries. All missing values (NaN) in the `emp_title` column with the string `Unknown`.
 ![Handling missing data](https://raw.githubusercontent.com/noe2019/Smart-Lending/main/images/md.gif)
+- Convert dat columns to datetime.
 ## Exploratory Data Analysis (EDA)
 
 ### Customer Demographics
 
-Explore the demographic breakdown of borrowers, highlighting key characteristics.
+## Top 10 and Bottom 10 States by Number of Borrowers
+
+| Rank | Top 10 States      | Number of Borrowers | Bottom 10 States         | Number of Borrowers |
+|------|--------------------|---------------------|--------------------------|---------------------|
+| 1    | California         | 6,894               | Maine                    | 3                   |
+| 2    | New York           | 3,701               | Iowa                     | 5                   |
+| 3    | Florida            | 2,773               | Nebraska                 | 5                   |
+| 4    | Texas              | 2,664               | Idaho                    | 6                   |
+| 5    | New Jersey         | 1,822               | Indiana                  | 9                   |
+| 6    | Illinois           | 1,486               | Tennessee                | 17                  |
+| 7    | Pennsylvania       | 1,482               | Mississippi              | 19                  |
+| 8    | Virginia           | 1,375               | Vermont                  | 54                  |
+| 9    | Georgia            | 1,355               | South Dakota             | 63                  |
+| 10   | Massachusetts      | 1,310               | Alaska                   | 78                  |
+
+### Key Observations
+
+1. **Geographic Diversity:** The top borrowing states span across various U.S. regions, indicating widespread economic activity and access to credit facilities, whereas the bottom borrowing states are predominantly less populous and economically smaller.
+2. **Population Impact:** States with larger populations like California and New York dominate the top of the list, suggesting a direct correlation between population size and the number of borrowers.
+3. **Economic Factors:** The bottom states generally feature fewer borrowers, which may be influenced by lower levels of economic activity or smaller financial markets.
+4. **Variability in Borrowing:** There is a stark contrast in the number of borrowers between the top and bottom states, with California having more than 2,000 times the number of borrowers compared to Maine.
+5. **Policy Implications:** This disparity could highlight areas needing targeted economic support or improved access to financial services to stimulate borrowing and economic growth.
 
 ### Loan Performance
 
