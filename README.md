@@ -76,24 +76,33 @@ The dataset consists of **38576 entries (rows)**. Each entry represents a unique
 
 The dataset includes the twenty four (24) features (columns):
 
-1. **Loan_ID**: Unique identifier for each loan application.
-2. **Customer_ID**: Unique identifier for each customer.
-3. **Loan_Amount**: The amount of money requested by the borrower.
-4. **Loan_Term**: The duration of the loan in months.
-5. **Interest_Rate**: The interest rate applied to the loan.
-6. **Loan_Type**: The type of loan (e.g., personal, mortgage, auto).
-7. **Application_Date**: The date when the loan application was submitted.
-8. **Approval_Status**: The status of the loan application (e.g., approved, rejected, pending).
-9. **Credit_Score**: The credit score of the applicant at the time of application.
-10. **Employment_Status**: The employment status of the applicant (e.g., employed, unemployed, self-employed).
-11. **Annual_Income**: The annual income of the applicant.
-12. **Age**: The age of the applicant.
-13. **Gender**: The gender of the applicant.
-14. **Marital_Status**: The marital status of the applicant.
-15. **Dependents**: The number of dependents the applicant has.
-16. **Region**: The geographical region where the applicant resides.
-17. **Loan_Purpose**: The purpose for which the loan is being sought (e.g., home improvement, debt consolidation).
-18. **Payment_History**: Historical record of payments made by the borrower.
+
+| Column Name             | Description                                                                                   | Data Type         |
+|-------------------------|-----------------------------------------------------------------------------------------------|-------------------|
+| **id**                  | A unique identifier for each loan record.                                                     | String/Alphanumeric|
+| **address_state**       | The U.S. state where the borrower resides.                                                    | Categorical       |
+| **application_type**    | Indicates whether the application is individual or joint.                                     | Categorical       |
+| **emp_length**          | The number of years the borrower has been employed at their current job.                      | Categorical/Numeric|
+| **emp_title**           | The job title of the borrower.                                                                | Categorical       |
+| **grade**               | The credit grade assigned to the borrower by the lender, reflecting creditworthiness.         | Categorical       |
+| **home_ownership**      | The home ownership status of the borrower.                                                    | Categorical       |
+| **issue_date**          | The date when the loan was issued.                                                            | DateTime          |
+| **last_credit_pull_date** | The date of the most recent credit check performed on the borrower.                          | DateTime          |
+| **last_payment_date**   | The date of the borrower's last loan payment.                                                 | DateTime          |
+| **loan_status**         | The current status of the loan.                                                               | Categorical       |
+| **next_payment_date**   | The scheduled date for the borrower's next loan payment.                                      | DateTime          |
+| **member_id**           | A unique identifier for the borrower.                                                         | String/Alphanumeric|
+| **purpose**             | The reason for which the loan is being taken out.                                             | Categorical       |
+| **sub_grade**           | A finer classification of the borrower's credit grade, providing more granularity.            | Categorical       |
+| **term**                | The length of time for the loan repayment period.                                             | Categorical       |
+| **verification_status** | Indicates whether the borrower’s income or employment details have been verified.             | Categorical       |
+| **annual_income**       | The annual income of the borrower at the time of the loan application.                        | Numeric (float)   |
+| **dti**                 | Debt-to-Income ratio, a measure of the borrower’s monthly debt payments divided by their gross monthly income. | Numeric (float) |
+| **installment**         | The fixed monthly payment amount for the loan.                                                | Numeric (float)   |
+| **int_rate**            | The interest rate applied to the loan.                                                        | Numeric (float)   |
+| **loan_amount**         | The total amount of money borrowed.                                                           | Numeric (float)   |
+| **total_acc**           | The total number of credit accounts the borrower has.                                         | Numeric (integer) |
+| **total_payment**       | The total amount paid by the borrower so far, including principal and interest.               | Numeric (float)   |
 
 #### Background Information
 
@@ -111,13 +120,14 @@ The primary goals of analyzing this dataset include:
 The dataset was collected from the bank's internal systems, which record every loan application and its related details. The data is anonymized to protect customer privacy and complies with data protection regulations.
 
 ### Data Cleaning and Preprocessing
-Most columns have zero missing values except for 'emp_title', which has 1,438 missing entries. All missing values (NaN) in the 'emp_title' column with the string "Unknown".
+- Most columns have zero missing values except for emp_title', which has 1,438 missing entries. All missing values (NaN) in the `emp_title` column with the string `Unknown`.
 ![Handling missing data](https://raw.githubusercontent.com/noe2019/Smart-Lending/main/images/md.gif)
+- Convert dat columns to datetime.
 ## Exploratory Data Analysis (EDA)
 
 ### Customer Demographics
 
-Explore the demographic breakdown of borrowers, highlighting key characteristics.
+This analysis helps identify patterns and trends among different borrower segments.
 
 ### Loan Performance
 
