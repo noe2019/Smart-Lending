@@ -3,13 +3,12 @@
 ## Table of Contents
 1. [Objectives](#objectives)
 2. [Data Overview](#data-overview)
-   - [Data Description](#data-description)
-   - [Data Source and Collection](#data-source-and-collection)
-   - [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
-3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-   - [Customer Demographics](#customer-demographics)
-   - [Loan Performance](#loan-performance)
-   - [Default Rates](#default-rates)
+   2.1. [Data Description](#data-description)
+   2.2. [Data Source and Collection](#data-source-and-collection)
+   2.3. [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
+3. [Loan portfolio demographics](#loan-portfolio-demographics)
+   3.1. [Demographics by Number of Borowers](#demographics-by-number-borowers)
+   3.2. [Demographics by Loan Amount](#demographics-by-loan-amount)
 4. [Risk Assessment](#risk-assessment)
    - [Credit Score Analysis](#credit-score-analysis)
    - [Predictors of Default](#predictors-of-default)
@@ -30,7 +29,7 @@ By leveraging this dataset, the goal is to understand patterns and trends that i
 
 ## 2. Data Overview
 
-### 2.1. Data Description
+#### 2.1. Data Description
 
 The `financial_loan.csv` dataset contains **38,576 entries (rows)**, where each row represents a unique loan application. These entries detail various attributes associated with the loan applicant and the specifics of the loan itself.
 
@@ -67,20 +66,18 @@ The dataset includes twenty-four (24) features (columns, variables):
 
 ![Data Description](https://raw.githubusercontent.com/noe2019/Smart-Lending/main/images/desc.gif)
 
-### 2.2. Data Source and Collection
+#### 2.2. Data Source and Collection
 
 The dataset was collected from the bank's internal systems, which record every loan application and its related details. The data is anonymized to protect customer privacy and complies with data protection regulations.
 
-### 2.3. Data Cleaning and Preprocessing
+#### 2.3. Data Cleaning and Preprocessing
 
 - Most columns have zero missing values except for `emp_title`, which has 1,438 missing entries. All missing values (NaN) in the `emp_title` column are replaced with the string `Unknown`.
 - Date columns are converted to datetime format.
 
-## Exploratory Data Analysis (EDA)
+## 3. Loan portfolio demographics
 
-### Customer Demographics
-
-### Top 10 and Bottom 10 States by Number of Borrowers
+#### 3.1. Top 10 and Bottom 10 States by Number of Borrowers
 
 | Rank | Top 10 States      | Number of Borrowers | Bottom 10 States         | Number of Borrowers |
 |------|--------------------|---------------------|--------------------------|---------------------|
@@ -95,7 +92,7 @@ The dataset was collected from the bank's internal systems, which record every l
 | 9    | Georgia            | 1,355               | South Dakota             | 63                  |
 | 10   | Massachusetts      | 1,310               | Alaska                   | 78                  |
 
-### Key Observations
+#### Key Observations
 
 1. **Geographic Diversity**: The top borrowing states span across various U.S. regions, indicating widespread economic activity and access to credit facilities, whereas the bottom borrowing states are predominantly less populous and economically smaller.
 2. **Population Impact**: States with larger populations like California and New York dominate the top of the list, suggesting a direct correlation between population size and the number of borrowers.
@@ -103,7 +100,7 @@ The dataset was collected from the bank's internal systems, which record every l
 4. **Variability in Borrowing**: There is a stark contrast in the number of borrowers between the top and bottom states, with California having more than 2,000 times the number of borrowers compared to Maine.
 5. **Policy Implications**: This disparity could highlight areas needing targeted economic support or improved access to financial services to stimulate borrowing and economic growth.
 
-### Top 10 and Bottom 10 States by Amount Borrowed
+#### 3.2. Top 10 and Bottom 10 States by Amount Borrowed
 
 | Rank | Top 10 States      | Total Loan Amount (in millions) | Bottom 10 States | Total Loan Amount (in thousands) |
 |------|--------------------|---------------------------------|------------------|----------------------------------|
@@ -118,7 +115,7 @@ The dataset was collected from the bank's internal systems, which record every l
 | 9    | Georgia (GA)       | $15.48                          | South Dakota (SD)| $606.15                           |
 | 10   | Massachusetts (MA) | $15.05                          | Montana (MT)     | $829.53                           |
 
-### Key Insights
+#### Key Insights
 
 1. **Significant Disparities**: The loan amounts in the top states are orders of magnitude higher than those in the bottom states, highlighting economic disparities that mirror population and developmental differences across the regions.
 2. **Economic Concentration**: The largest loan amounts are concentrated in states known as economic powerhouses with large populations, such as California and New York.
