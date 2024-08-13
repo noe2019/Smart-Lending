@@ -121,10 +121,10 @@ The dataset was collected from the bank's internal systems, which record every l
 
 ## 4. Loan Portfolio Health Assessment
 
-Analyze the performance of different loan types and identify factors influencing loan success.
+Analyze the Key Performance Indicators (KPIs) of the loan portfolio, in order to see how the bank is doing.
 
 #### 4.1. Loan Status Distribution
-###### 4.1.1. Distribution Table
+##### 4.1.1. Distribution Table
 
 | Loan Status  | Number of Loans | Proportion of Total Loans |
 |--------------|-----------------|---------------------------|
@@ -133,20 +133,19 @@ Analyze the performance of different loan types and identify factors influencing
 | Current      | 1,044           | 2.71%                     |
 | Late         | 54              | 0.14%                     |
 
-###### 4.1.2. Graphical Representation
+##### 4.1.2. Graphical Representation
 
 ![Loan Status Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/loan_distribution.png)
 
-### 4.1.3. Key Insights
+##### 4.1.3. Key Insights
 
 1. **High Rate of Fully Paid Loans**: A significant 83.33% of the loans are Fully Paid, indicating a strong performance in terms of loan repayments and financial health of the portfolio.
 2. **Charged Off Loans**: The 13.82% of Charged Off loans signify a considerable default rate that could impact the portfolio's profitability and should be a focal point for risk management strategies.
 3. **Low Percentage of Current and Late Loans**: Only 2.71% of the loans are Current, and a minimal 0.14% are Late, which suggests that most loans are concluded rather than ongoing or problematic.
-4. **Managing Risk**: The proportion of Late loans, while small, still represents a potential risk for further defaults and requires proactive management to prevent escalation to Charged Off status.
-5. **Portfolio Maturity and Health**: The dominance of Fully Paid loans alongside the low proportion of Current and Late loans indicates a mature portfolio with effective collection strategies but highlights the need for vigilant management of new and existing loans to maintain these results.
+4. **Portfolio Maturity and Health**: The dominance of Fully Paid loans alongside the low proportion of Current and Late loans indicates a mature portfolio with effective collection strategies but highlights the need for vigilant management of new and existing loans to maintain these results.
 
 ### 4.1.4. Recommendations
-
+- **Managing Risk**: The proportion of Late loans, while small, still represents a potential risk for further defaults and requires proactive management to prevent escalation to Charged Off status.
 - **Risk Mitigation Strategies**: Implementing enhanced credit monitoring and risk assessment tools can help decrease the Charged Off rate.
 - **Collection Efficiencies**: Focusing on improving collection strategies could reduce the number of Late loans transitioning to Charged Off status.
 - **Customer Support Programs**: Developing borrower support programs might prevent loans from becoming Late and improve overall loan performance.
@@ -155,12 +154,12 @@ Analyze the performance of different loan types and identify factors influencing
 
 ### 4.2.1. Default Rate Overview
 
-The Default Rate in the loan portfolio currently stands at **13.82%**. This metric is critical as it indicates the percentage of the total number of loans that have been written off as losses after the borrowers failed to repay.
+The Default Rate in the loan portfolio currently stands at **13.82%**. This metric is important as it indicates the percentage of the total number of loans that have been written off as losses after the borrowers failed to repay.
 
 ### 4.2.2. Key Insights
 
-- **Financial Impact**: A Default Rate of 13.82% is substantial and can significantly affect the profitability of the loan portfolio. It suggests that a notable portion of the loans extended are unlikely to be repaid, leading to financial losses.
-- **Risk Assessment**: This rate is indicative of the risk level associated with the lending decisions. A higher default rate may point to inadequacies in the credit risk assessment processes.
+- **Financial Impact**: A Default Rate of 13.82% is substantial and can significantly affect the profitability of the loan portfolio. It suggests that a 13.82% of the loans extended are unlikely to be repaid, leading to financial losses.
+- **Risk Assessment**: This rate is indicative of the risk level associated with the lending decisions. This rate may point to inadequacies in the credit risk assessment processes of the bank.
 
 ### 4.2.3. Recommendations
 
