@@ -126,29 +126,49 @@ Analyze the Key Performance Indicators (KPIs) of the loan portfolio, in order to
 #### 4.1. Loan Status Distribution
 ##### 4.1.1. Distribution Table
 
-| Loan Status  | Number of Loans | Proportion of Total Loans |
-|--------------|-----------------|---------------------------|
-| Fully Paid   | 32,145          | 83.33%                    |
-| Charged Off  | 5,333           | 13.82%                    |
-| Current      | 1,044           | 2.71%                     |
-| Late         | 54              | 0.14%                     |
+| Loan Status  | Number of Loans | Total Loan Amount (USD) | Average Loan Amount (USD) | Proportion of Total Loans (%) |
+|--------------|-----------------|------------------------|---------------------------|-------------------------------|
+| Charged Off  | 5,333           | 65,532,225             | 12,288.06                  | 13.82                          |
+| Current      | 1,044           | 17,904,100             | 17,149.52                  | 2.71                           |
+| Fully Paid   | 32,145          | 351,358,350            | 10,930.42                  | 83.33                          |
+| Late         | 54              | 962,400                | 17,822.22                  | 0.14                           |
 
 ##### 4.1.2. Graphical Representation
 
-![Loan Status Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/loan_distribution.png)
+![Loan Status Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/loan_distribution2.png)
 
 ##### 4.1.3. Key Insights
 
-1. **High Rate of Fully Paid Loans**: A significant 83.33% of the loans are Fully Paid, indicating a strong performance in terms of loan repayments and financial health of the portfolio.
-2. **Charged Off Loans**: The 13.82% of Charged Off loans signify a considerable default rate that could impact the portfolio's profitability and should be a focal point for risk management strategies.
-3. **Low Percentage of Current and Late Loans**: Only 2.71% of the loans are Current, and a minimal 0.14% are Late, which suggests that most loans are concluded rather than ongoing or problematic.
-4. **Portfolio Maturity and Health**: The dominance of Fully Paid loans alongside the low proportion of Current and Late loans indicates a mature portfolio with effective collection strategies but highlights the need for vigilant management of new and existing loans to maintain these results.
+1. **Dominance of Fully Paid Loans**: 
+   - **Proportion**: Fully Paid loans constitute the vast majority of the portfolio, accounting for 83.33% of all loans. This indicates strong portfolio health, with most borrowers successfully completing their repayments.
+   - **Total Loan Amount**: The Fully Paid loans also represent the highest total loan amount, approximately $351 million, indicating that the bulk of the bank's capital has been successfully repaid.
+
+2. **Charged Off Loans**: 
+   - **Proportion**: Charged Off loans account for 13.82% of the portfolio, representing a significant portion of loans that have defaulted. This poses a notable risk to the portfolio's profitability.
+   - **Total Loan Amount**: The total loan amount for Charged Off loans is over $65 million, indicating substantial losses due to defaults.
+
+3. **Current and Late Loans**: 
+   - **Current Loans**: Comprising 2.71% of the portfolio, these loans represent ongoing payments with a higher average loan amount, indicating a potential area for increased monitoring to ensure they do not default.
+   - **Late Loans**: Although minimal in number (0.14%), the late loans have the highest average loan amount, suggesting that they could become a significant risk if they progress to default status.
 
 ### 4.1.4. Recommendations
-- **Managing Risk**: The proportion of Late loans, while small, still represents a potential risk for further defaults and requires proactive management to prevent escalation to Charged Off status.
-- **Risk Mitigation Strategies**: Implementing enhanced credit monitoring and risk assessment tools can help decrease the Charged Off rate.
-- **Collection Efficiencies**: Focusing on improving collection strategies could reduce the number of Late loans transitioning to Charged Off status.
-- **Customer Support Programs**: Developing borrower support programs might prevent loans from becoming Late and improve overall loan performance.
+
+1. **Strengthen Monitoring and Collection Efforts for Charged Off and Late Loans**:
+   - Focus on improving collection strategies to reduce the percentage of Charged Off loans.
+   - Implement proactive measures for Late loans to prevent them from transitioning into Charged Off status.
+
+2. **Enhanced Risk Management**:
+   - Given that Current and Late loans have higher average loan amounts, it's crucial to apply rigorous risk assessment and offer financial counseling to borrowers to ensure these loans are successfully repaid.
+   - The proportion of Late loans, while small, still represents a potential risk for further defaults and requires proactive management to prevent escalation to Charged Off status.
+
+3. **Leverage Success of Fully Paid Loans**:
+   - Analyze the factors contributing to the high proportion of Fully Paid loans and replicate these practices across other loan categories, especially those at higher risk of default.
+
+4. **Targeted Financial Programs**:
+   - Develop specialized financial products or services aimed at borrowers in the Late and Charged Off category to help them manage their finances better and potentially avoid default.
+
+By implementing these strategies, the bank can improve its overall loan portfolio health, reduce defaults, and enhance profitability.
+
 
 ### 4.2. Default Rate in Loan Portfolio
 
