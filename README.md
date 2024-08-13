@@ -1,12 +1,10 @@
 # Smart Lending: Enhancing Financial Decisions with Data-Driven Insights
 ![Smart Lending](https://github.com/noe2019/Smart-Lending/blob/main/images/loan.gif)
 ## Table of Contents
-
-1. [Project Setup](#project-setup)
-   - [Requirements](#requirements)
-   - [Installation](#installation)
+1. [Objectives](#objectives)
 2. [Data Overview](#data-overview)
    - [Data Description](#data-description)
+   - [Data Source and Collection](#data-source-and-collection)
    - [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
 3. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
    - [Customer Demographics](#customer-demographics)
@@ -21,7 +19,7 @@
 6. [Automate the decision-making on future loan applications](#Automate-the-decision-making-on-future-loan-applications)
 7. [Conclusion and Recommendations](#conclusion-and-recommendations)
 ---
-## Introduction
+## 1. Objectives
 
 This banking institution aims to:
 1. Understand the demographics of its loan portfolio.
@@ -30,27 +28,15 @@ This banking institution aims to:
 
 By leveraging this dataset, the goal is to understand patterns and trends that impact the bank's loan portfolio, identify potential areas for improvement, and develop strategies to mitigate risks associated with loan defaults.
 
-## Project Setup
+## 2. Data Overview
 
-### Requirements
+### 2.1. Data Description
 
-List any packages, libraries, or software requirements needed to run the project.
+The `financial_loan.csv` dataset contains **38,576 entries (rows)**, where each row represents a unique loan application. These entries detail various attributes associated with the loan applicant and the specifics of the loan itself.
 
-### Installation
+Data collection spans from **January 1, 2020, to December 31, 2023**, providing a detailed look at loan activities over a four-year period. This extensive dataset enables the analysis of emerging trends and patterns, offering valuable insights into the dynamics of loan processing and borrower behavior over time.
 
-Provide instructions for setting up the project environment and installing dependencies.
-
-## Data Overview
-
-### Data Description
-
-The `financial_loan.csv` dataset contains detailed information about loan applications processed by a financial institution. This dataset is used to analyze various aspects of loan performance, customer demographics, and risk management.
-
-The dataset consists of **38,576 entries (rows)**. Each entry represents a unique loan application and contains various attributes related to the applicant and the loan itself. 
-
-The dataset is compiled from a comprehensive collection of loan applications submitted from **January 1, 2020, to December 31, 2023**. This period provides a comprehensive view of loan activity over four years, allowing for analysis of trends and patterns within this timeframe.
-
-The dataset includes twenty-four (24) features (columns):
+The dataset includes twenty-four (24) features (columns, variables):
 
 | Column Name               | Description                                                                                   | Data Type           |
 |---------------------------|-----------------------------------------------------------------------------------------------|---------------------|
@@ -81,11 +67,11 @@ The dataset includes twenty-four (24) features (columns):
 
 ![Data Description](https://raw.githubusercontent.com/noe2019/Smart-Lending/main/images/desc.gif)
 
-### Data Source and Collection
+### 2.2. Data Source and Collection
 
 The dataset was collected from the bank's internal systems, which record every loan application and its related details. The data is anonymized to protect customer privacy and complies with data protection regulations.
 
-### Data Cleaning and Preprocessing
+### 2.3. Data Cleaning and Preprocessing
 
 - Most columns have zero missing values except for `emp_title`, which has 1,438 missing entries. All missing values (NaN) in the `emp_title` column are replaced with the string `Unknown`.
 - Date columns are converted to datetime format.
