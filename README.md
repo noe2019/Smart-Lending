@@ -6,17 +6,19 @@
    - [Data Description](#data-description)
    - [Data Source and Collection](#data-source-and-collection)
    - [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
-4. [Loan portfolio demographics](#loan-portfolio-demographics)
+3. [Loan portfolio demographics](#loan-portfolio-demographics)
    - [Demographics by Number of Borowers](#demographics-by-number-borowers)
    - [Demographics by Loan Amount](#demographics-by-loan-amount)
-5. [Risk Assessment](#risk-assessment)
+   - [Geographic Insights](#geographic-insights)
+   - [Recommendations](#recommendations)
+4. [Loan Portfolio Health Assessment](#loan-portfolio-health-assessment)
    - [Credit Score Analysis](#credit-score-analysis)
    - [Predictors of Default](#predictors-of-default)
-6. [Profitability Analysis](#profitability-analysis)
+5. [Profitability Analysis](#profitability-analysis)
    - [Loan Product Profitability](#loan-product-profitability)
    - [Regional Performance](#regional-performance)
-7. [Automate the decision-making on future loan applications](#Automate-the-decision-making-on-future-loan-applications)
-8. [Conclusion and Recommendations](#conclusion-and-recommendations)
+6. [Automate the decision-making on future loan applications](#Automate-the-decision-making-on-future-loan-applications)
+7. [Conclusion and Recommendations](#conclusion-and-recommendations)
 ---
 ## 1. Objectives
 
@@ -92,14 +94,6 @@ The dataset was collected from the bank's internal systems, which record every l
 | 9    | Georgia            | 1,355               | South Dakota             | 63                  |
 | 10   | Massachusetts      | 1,310               | Alaska                   | 78                  |
 
-#### Key Observations
-
-1. **Geographic Diversity**: The top borrowing states span across various U.S. regions, indicating widespread economic activity and access to credit facilities, whereas the bottom borrowing states are predominantly less populous and economically smaller.
-2. **Population Impact**: States with larger populations like California and New York dominate the top of the list, suggesting a direct correlation between population size and the number of borrowers.
-3. **Economic Factors**: The bottom states generally feature fewer borrowers, which may be influenced by lower levels of economic activity or smaller financial markets.
-4. **Variability in Borrowing**: There is a stark contrast in the number of borrowers between the top and bottom states, with California having more than 2,000 times the number of borrowers compared to Maine.
-5. **Policy Implications**: This disparity could highlight areas needing targeted economic support or improved access to financial services to stimulate borrowing and economic growth.
-
 #### 3.2. Top 10 and Bottom 10 States by Amount Borrowed
 
 | Rank | Top 10 States      | Total Loan Amount (in millions) | Bottom 10 States | Total Loan Amount (in thousands) |
@@ -115,15 +109,17 @@ The dataset was collected from the bank's internal systems, which record every l
 | 9    | Georgia (GA)       | $15.48                          | South Dakota (SD)| $606.15                           |
 | 10   | Massachusetts (MA) | $15.05                          | Montana (MT)     | $829.53                           |
 
-#### Key Insights
+#### 3.3. Geographic Insights
 
-1. **Significant Disparities**: The loan amounts in the top states are orders of magnitude higher than those in the bottom states, highlighting economic disparities that mirror population and developmental differences across the regions.
-2. **Economic Concentration**: The largest loan amounts are concentrated in states known as economic powerhouses with large populations, such as California and New York.
-3. **Opportunities for Growth**: The lower loan amounts in states like Maine and Nebraska might indicate under-served markets or areas where economic growth can be stimulated through increased lending and financial services.
-4. **Strategic Targeting**: Financial institutions may find strategic value in targeting under-served states with tailored financial products and services that cater to the unique needs of these regions.
-5. **Policy Implications**: These insights could be critical for policymakers when considering measures to encourage economic equality and improve access to financial resources across all states.
+- **High Borrower Concentration**: States like California, New York, and Texas not only have the highest number of borrowers but also record the highest loan volumes, indicating robust economic activities and substantial market penetration.
+- **Low Activity Regions**: States such as Maine and Iowa, which show minimal numbers of borrowers and loan amounts, may represent under-served markets with potential for targeted financial product offerings.
 
-### Loan Portfolio Health Assessment
+#### 3.4. Recommendations
+
+- **Deepen Market Penetration in High-Demand Areas**: Enhance product offerings and marketing strategies in states with high borrower concentrations to capitalize on existing demand.
+- **Develop Tailored Products for Low-Demand States**: Research and understand the unique needs of markets with fewer borrowers to offer more appealing product options, could help capture untapped markets. This can be done either by investing in their financial literacy or by reviewing the condition to loan access.
+
+## 4. Loan Portfolio Health Assessment
 
 Analyze the performance of different loan types and identify factors influencing loan success.
 
