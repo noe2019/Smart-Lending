@@ -1,16 +1,5 @@
 # Smart Lending: Enhancing Financial Decisions with Data-Driven Insights
-
 ![Smart Lending](https://github.com/noe2019/Smart-Lending/blob/main/images/loan.gif)
-
-## Introduction
-
-This banking institution aims to:
-1. Understand the demographics of its loan portfolio.
-2. Assess its loan portfolio health.
-3. Automate the decision-making on future loan applications.
-
-By leveraging this dataset, the goal is to understand patterns and trends that impact the bank's loan portfolio, identify potential areas for improvement, and develop strategies to mitigate risks associated with loan defaults.
-
 ## Table of Contents
 
 1. [Project Setup](#project-setup)
@@ -32,6 +21,14 @@ By leveraging this dataset, the goal is to understand patterns and trends that i
 6. [Automate the decision-making on future loan applications](#Automate-the-decision-making-on-future-loan-applications)
 7. [Conclusion and Recommendations](#conclusion-and-recommendations)
 ---
+## Introduction
+
+This banking institution aims to:
+1. Understand the demographics of its loan portfolio.
+2. Assess its loan portfolio health.
+3. Automate the decision-making on future loan applications.
+
+By leveraging this dataset, the goal is to understand patterns and trends that impact the bank's loan portfolio, identify potential areas for improvement, and develop strategies to mitigate risks associated with loan defaults.
 
 ## Project Setup
 
@@ -49,13 +46,9 @@ Provide instructions for setting up the project environment and installing depen
 
 The `financial_loan.csv` dataset contains detailed information about loan applications processed by a financial institution. This dataset is used to analyze various aspects of loan performance, customer demographics, and risk management.
 
-#### Number of Entries
+The dataset consists of **38,576 entries (rows)**. Each entry represents a unique loan application and contains various attributes related to the applicant and the loan itself. 
 
-The dataset consists of **38,576 entries (rows)**. Each entry represents a unique loan application and contains various attributes related to the applicant and the loan itself.
-
-![Data Description](https://raw.githubusercontent.com/noe2019/Smart-Lending/main/images/desc.gif)
-
-#### Features
+The dataset is compiled from a comprehensive collection of loan applications submitted from **January 1, 2020, to December 31, 2023**. This period provides a comprehensive view of loan activity over four years, allowing for analysis of trends and patterns within this timeframe.
 
 The dataset includes twenty-four (24) features (columns):
 
@@ -86,11 +79,9 @@ The dataset includes twenty-four (24) features (columns):
 | **total_acc**             | The total number of credit accounts the borrower has.                                         | Numeric (integer)   |
 | **total_payment**         | The total amount paid by the borrower so far, including principal and interest.               | Numeric (float)     |
 
-#### Background Information
+![Data Description](https://raw.githubusercontent.com/noe2019/Smart-Lending/main/images/desc.gif)
 
-The dataset is compiled from a comprehensive collection of loan applications submitted from **January 1, 2020, to December 31, 2023**. This period provides a comprehensive view of loan activity over four years, allowing for analysis of trends and patterns within this timeframe.
-
-#### Data Source and Collection
+### Data Source and Collection
 
 The dataset was collected from the bank's internal systems, which record every loan application and its related details. The data is anonymized to protect customer privacy and complies with data protection regulations.
 
