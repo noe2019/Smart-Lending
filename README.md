@@ -3,9 +3,9 @@
 ## Table of Contents
 1. [Objectives](#objectives)
 2. [Data Overview](#data-overview)
--  [Data Description](#data-description)
--  [Data Source and Collection](#data-source-and-collection)
--  [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
+   - [Data Description](#data-description)
+   - [Data Source and Collection](#data-source-and-collection)
+   - [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
 4. [Loan portfolio demographics](#loan-portfolio-demographics)
    - [Demographics by Number of Borowers](#demographics-by-number-borowers)
    - [Demographics by Loan Amount](#demographics-by-loan-amount)
