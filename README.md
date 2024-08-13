@@ -123,11 +123,8 @@ The dataset was collected from the bank's internal systems, which record every l
 
 Analyze the performance of different loan types and identify factors influencing loan success.
 
-### Loan Status Distribution
-
-## Loan Status Distribution Analysis
-
-### Distribution Table
+#### 4.1. Loan Status Distribution
+###### 4.1.1. Distribution Table
 
 | Loan Status  | Number of Loans | Proportion of Total Loans |
 |--------------|-----------------|---------------------------|
@@ -136,11 +133,11 @@ Analyze the performance of different loan types and identify factors influencing
 | Current      | 1,044           | 2.71%                     |
 | Late         | 54              | 0.14%                     |
 
-### Graphical Representation
+###### 4.1.2. Graphical Representation
 
 ![Loan Status Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/loan_distribution.png)
 
-### Key Insights
+### 4.1.3. Key Insights
 
 1. **High Rate of Fully Paid Loans**: A significant 83.33% of the loans are Fully Paid, indicating a strong performance in terms of loan repayments and financial health of the portfolio.
 2. **Charged Off Loans**: The 13.82% of Charged Off loans signify a considerable default rate that could impact the portfolio's profitability and should be a focal point for risk management strategies.
@@ -148,26 +145,24 @@ Analyze the performance of different loan types and identify factors influencing
 4. **Managing Risk**: The proportion of Late loans, while small, still represents a potential risk for further defaults and requires proactive management to prevent escalation to Charged Off status.
 5. **Portfolio Maturity and Health**: The dominance of Fully Paid loans alongside the low proportion of Current and Late loans indicates a mature portfolio with effective collection strategies but highlights the need for vigilant management of new and existing loans to maintain these results.
 
-### Recommendations
+### 4.1.4. Recommendations
 
 - **Risk Mitigation Strategies**: Implementing enhanced credit monitoring and risk assessment tools can help decrease the Charged Off rate.
 - **Collection Efficiencies**: Focusing on improving collection strategies could reduce the number of Late loans transitioning to Charged Off status.
 - **Customer Support Programs**: Developing borrower support programs might prevent loans from becoming Late and improve overall loan performance.
 
-### Default Rate
+### 4.2. Default Rate in Loan Portfolio
 
-## Analysis of Default Rate in Loan Portfolio
-
-### Default Rate Overview
+### 4.2.1. Default Rate Overview
 
 The Default Rate in the loan portfolio currently stands at **13.82%**. This metric is critical as it indicates the percentage of the total number of loans that have been written off as losses after the borrowers failed to repay.
 
-### Significance
+### 4.2.2. Key Insights
 
 - **Financial Impact**: A Default Rate of 13.82% is substantial and can significantly affect the profitability of the loan portfolio. It suggests that a notable portion of the loans extended are unlikely to be repaid, leading to financial losses.
 - **Risk Assessment**: This rate is indicative of the risk level associated with the lending decisions. A higher default rate may point to inadequacies in the credit risk assessment processes.
 
-### Strategies for Mitigation
+### 4.2.3. Recommendations
 
 - **Enhanced Credit Scoring**: Improving the criteria and models used for assessing borrower creditworthiness could help in reducing the default rate.
 - **Risk-Based Pricing**: Adjusting interest rates based on the calculated risk of loan defaults can offset potential losses and manage the risk-return profile more effectively.
@@ -177,53 +172,50 @@ The Default Rate in the loan portfolio currently stands at **13.82%**. This metr
 
 The 13.82% Default Rate poses challenges but also highlights opportunities for improving risk management and credit assessment strategies. By addressing the factors contributing to this rate, the portfolio can achieve better performance and lower financial risks.
 
-### Delinquency Rate
+### 4.3. Delinquency Rate
 
 The Delinquency Rate in the loan portfolio currently stands at **0.14%**. This metric represents the percentage of loans that are past due but have not yet reached default status.
 
-#### Significance
+#### 4.3.1. Key Insights
 
 - **Early Warning Indicator**: While relatively low, the Delinquency Rate serves as an early warning for loans that might eventually default, allowing for proactive management.
 - **Portfolio Health**: A low delinquency rate generally indicates good health of the loan portfolio and effective loan servicing practices.
 
-#### Strategies for Management
+#### 4.3.2. Recommendations
 
 - **Proactive Loan Servicing**: Implementing early intervention strategies to address late payments before they escalate.
 - **Financial Education**: Offering financial education and counseling to borrowers at risk of delinquency.
 - **Flexible Repayment Options**: Providing flexible repayment plans for borrowers showing early signs of financial stress.
 
-### Conclusion
-
 While the Default Rate of 13.82% poses significant challenges, the low Delinquency Rate of 0.14% indicates effective management of most loans. Together, these metrics highlight areas for both concern and optimism within the portfolio. Addressing the factors contributing to the high default rate while maintaining the practices that lead to a low delinquency rate will be crucial for future success and stability of the portfolio.
 
-### Average Loan Amount
+### 4.4. Average Loan Amount
 
 The average loan amount within our portfolio stands at **$11,296.07**. This figure is crucial for understanding the typical financial commitment undertaken by borrowers and the potential risk exposure for the lender.
 
-### Significance
+### 4.4.1. Key Insights
 
 - **Portfolio Exposure**: The average loan amount reflects the level of exposure that the loan portfolio has. Larger average loan sizes might indicate higher individual risk per loan, impacting the overall risk profile of the portfolio.
 - **Profitability Potential**: This amount also affects potential profitability. Higher loan amounts can lead to increased interest revenue but also carry greater risk of significant losses if defaults occur.
 
-### Implications for Risk Management
+### 4.4.2. Recommendations
 
 - **Risk Diversification**: To manage exposure, diversifying the types of loans offered can help spread out risk, particularly if larger loans are a significant portion of the portfolio.
 - **Loan Pricing Strategy**: Adjusting the pricing strategy to account for the risk associated with larger average loans can optimize profitability while managing risk effectively.
 - **Credit Assessment Strengthening**: Enhancing credit assessment processes to ensure that loans are issued to borrowers with the capability and intention to repay, especially for larger loan amounts.
 
-### Conclusion
 
 The average loan amount of $11,296.07 plays a critical role in determining the risk and profitability of our loan portfolio. Managing this aspect of the portfolio requires careful consideration of pricing, risk management practices, and the diversity of loan products offered. By maintaining a balance between risk and return, the portfolio can achieve sustainable growth and profitability.
 
 
-### Interest Rate Analysis
-## Interest Rate Summary Statistics
+### 4.5. Interest Rate Analysis
+## 4.5.1. Interest Rate Summary Statistics
 
 ![Interest Rate Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_IR.png)
 
 This section presents a detailed summary of the interest rates across our loan portfolio. The following table summarizes key statistical measures:
 
-### Summary Statistics Table
+### 4.5.2. Summary Statistics Table
 
 | Statistical Measure | Value  | Description                                  |
 |---------------------|--------|----------------------------------------------|
@@ -236,29 +228,27 @@ This section presents a detailed summary of the interest rates across our loan p
 | 75th Percentile     | 14.59% | 75% of loans have interest rates below this  |
 | Maximum Rate        | 24.59% | Highest interest rate in the portfolio       |
 
-### Discussion
+### 4.5.3. Key Insights
 
 - **Distribution Overview**: The distribution is moderately spread around the mean, indicating variability in the risk profiles of borrowers.
 - **Risk Indicators**: The range from the minimum to the maximum interest rate highlights the diverse creditworthiness among borrowers.
 - **Loan Pricing**: The quartile values suggest a tiered pricing strategy that aligns interest rates with assessed credit risk.
 
-### Strategic Implications
+### 4.5.4. Recommendations
 
 - **Loan Approval Criteria**: The variation in rates calls for robust loan approval criteria that consider borrower risk more effectively.
 - **Interest Rate Strategy**: Adjusting the interest rate strategy may help manage risk more efficiently and align with market competition.
 - **Portfolio Management**: Continuous monitoring of the interest rate distribution is essential for maintaining a healthy balance between risk and return.
 
-### Credit Score Distribution
+## 4.6. Credit Grade Distribution Analysis
 
-## Credit Grade Distribution Analysis
-
-### Overview
+### 4.6.1. Overview
 
 The distribution of credit grades across our loan portfolio is visualized in the histogram below. This analysis is crucial for understanding the risk profile of our borrowers based on their assigned credit grades from A to G.
 
 ![Credit Grade Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_CC.png)
 
-### Credit Grade Counts
+### 4.6.2. Credit Grade Counts
 
 This table shows the exact count of loans per credit grade, reflecting the creditworthiness of our borrowers:
 
@@ -272,13 +262,13 @@ This table shows the exact count of loans per credit grade, reflecting the credi
 | F            | 1,028           |
 | G            | 313             |
 
-### Interpretation
+### 4.6.3. Key Insights
 
 - **Dominant Grades**: Grades B and A are the most prevalent in the portfolio, indicating a substantial number of borrowers with good to excellent creditworthiness.
 - **Risk Distribution**: The number of loans decreases as the credit grade worsens from B to G, which is typical as fewer borrowers qualify for loans as risk increases.
 - **High-Risk Loans**: Loans in grades D through G represent higher risk but are less frequent, which helps mitigate overall portfolio risk.
 
-### Risk Profile Implications
+### 4.6.4. Recommendations
 
 - **Portfolio Diversification**: The spread across various credit grades suggests a diversified risk profile, with a concentration in the mid to high credit quality.
 - **Loan Pricing Strategy**: Higher-risk grades (D, E, F, G) likely carry higher interest rates to compensate for the increased risk, impacting the portfolio’s yield.
@@ -288,28 +278,26 @@ This table shows the exact count of loans per credit grade, reflecting the credi
 
 The credit grade distribution highlights a well-managed risk diversification strategy within our loan portfolio. By continuously monitoring and analyzing these distributions, we can adapt our lending practices to changing market conditions, optimize our risk exposure, and enhance overall portfolio profitability.
 
-### Debt-to-Income (DTI) Ratio
+## 4.7. Debt-to-Income (DTI) Ratio Distribution Analysis
 
-## Debt-to-Income (DTI) Ratio Distribution Analysis
-
-### Overview
+### 4.7.1. Overview
 
 The distribution of Debt-to-Income (DTI) ratios across our loan portfolio is visualized in the histogram below. This analysis helps us evaluate the financial health and repayment capacity of our borrowers.
 
 ![Debt-to-Income Ratio Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_TDI.png)
 
-### DTI Ratio Statistics
+### 4.7.2. DTI Ratio Statistics
 
 - **Average DTI Ratio**: 13%
 - **Distribution Characteristics**: The histogram peaks around the DTI ratio of 0.13, indicating that the average borrower has a debt load that is 13% of their income.
 
-### Interpretation
+### 4.7.3. Key Insights
 
 - **Credit Risk**: The bulk of our loan portfolio has a DTI ratio centered around 13%, which is generally considered manageable in consumer lending. This central clustering suggests that most borrowers are not excessively burdened by debt.
 - **Financial Health**: The DTI ratios predominantly range between 5% and 25%, with fewer borrowers at the higher end of the spectrum. This spread indicates a relatively healthy financial status among the majority of our borrowers, where their income levels are sufficient to manage the debt they have incurred.
 - **Risk Concentration**: The tail on the right side of the distribution, extending towards a DTI ratio of 30%, highlights a smaller segment of borrowers with higher debt loads relative to their income. These individuals represent a higher risk as they may face difficulties in meeting their loan obligations, especially under financially stressful conditions.
 
-### Strategic Implications
+### 4.7.4. Recommendations
 
 - **Lending Strategies**: Consideration may be given to tightening credit approval criteria or adjusting loan terms for applicants with higher DTI ratios to mitigate potential defaults.
 - **Risk Management**: Continuous monitoring of DTI ratios is essential, particularly focusing on trends that may shift more borrowers towards higher DTI categories.
@@ -319,26 +307,22 @@ The distribution of Debt-to-Income (DTI) ratios across our loan portfolio is vis
 
 Understanding the DTI ratio distribution is crucial for managing the overall risk of our loan portfolio. By ensuring a majority of borrowers maintain a DTI ratio within manageable limits, we safeguard the portfolio against significant default risks and maintain the financial stability of our lending operations.
 
-### Recovery Rate
+## 4.8. Recovery Rate Analysis
 
-## Recovery Rate Analysis
-
-### Overview
+### 4.8.1. Overview
 
 The Recovery Rate of our loan portfolio is currently at **56.90%**. This metric indicates the percentage of the principal amount that has been recovered from loans that defaulted.
 
-### Significance of the Recovery Rate
+### 4.8.2. Key Insights
 
 - **Financial Recovery**: A Recovery Rate of 56.90% means that for every dollar lost to defaults, we are able to recover approximately 56.9 cents. This rate is crucial for assessing the effectiveness of our collections and loss mitigation strategies.
 - **Portfolio Resilience**: This rate reflects the resilience of the portfolio against credit losses, providing insights into the overall risk management effectiveness.
 
-### Implications
+### 4.8.3. Recommendations
 
 - **Credit Loss Mitigation**: While recovering over half of the defaulted amounts is positive, there is room to enhance recovery strategies to further minimize losses.
 - **Risk Management**: The Recovery Rate directly impacts the portfolio's profitability and long-term sustainability. It is essential to continuously develop and refine recovery processes to improve this rate.
 - **Strategic Financial Planning**: Understanding the Recovery Rate helps in making informed decisions about loan provisioning, pricing strategies, and risk assessment practices.
-
-### Strategies for Improvement
 
 - **Enhanced Collection Efforts**: Implementing more aggressive or innovative collection strategies could improve the Recovery Rate.
 - **Legal and Negotiation Tactics**: Utilizing legal avenues more effectively and negotiating settlement options might increase the amount recovered from defaulted loans.
@@ -348,25 +332,21 @@ The Recovery Rate of our loan portfolio is currently at **56.90%**. This metric 
 
 The current Recovery Rate of 56.90% is a vital metric that highlights both the strengths and areas for improvement in our loan recovery efforts. By focusing on strategies that enhance this rate, we can better manage credit risks and improve the financial health of our portfolio.
 
-## Profitability Analysis
+## 4.9. Analysis of Loan Products Profitability
 
-### Loan Product Profitability
-
-## Analysis of Loan Product Profitability
-
-### Total Interest Income by Loan Product
+### 4.9.1. Total Interest Income by Loan Product
 
 The following graph illustrates the total interest income generated from various loan products in our portfolio:
 
 ![Total Interest Income by Loan Product](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_IINC)
 
-### Contribution to Total Interest Income by Loan Product
+### 4.9.2. Contribution to Total Interest Income by Loan Product
 
 The next graph shows the contribution of each loan product to the total interest income, highlighting the relative importance of each product category:
 
 ![Contribution to Total Interest Income by Loan Product](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_IINC_PERCENTAGE)
 
-### Detailed Profitability Metrics
+### 4.9.3. Detailed Profitability Metrics
 
 Here we provide a breakdown of key profitability metrics for each loan product based on the total loan amount, interest paid, and the number of loans:
 
@@ -387,7 +367,7 @@ Here we provide a breakdown of key profitability metrics for each loan product b
 | Vacation            | $1,967,950   | $275,164      | 352             | 10.88%                | 0.39%                            |
 | Renewable Energy    | $845,750     | $123,677      | 94              | 11.50%                | 0.17%                            |
 
-### Analysis and Insights
+### 4.9.4. Key Insights
 
 - **High Contribution Products**: Debt consolidation loans are the most significant contributor to interest income, accounting for over half of the total interest revenue, indicating their centrality to our lending business.
 - **Risk vs. Reward**: Products like small business loans show higher average interest rates, reflecting their higher risk but also their potential for higher returns.
@@ -397,13 +377,13 @@ Here we provide a breakdown of key profitability metrics for each loan product b
 
 This detailed analysis of profitability metrics across different loan products allows us to better understand the dynamics of our loan portfolio and guide strategic decisions related to product offerings, risk management, and revenue optimization.
 
-## Regional Loan Performance Analysis
+## 4.10. Regional Loan Performance Analysis
 
-### Overview
+### 4.10.1. Overview
 
 The following analysis provides a comprehensive breakdown of loan performance across different states, focusing on total loan amounts, average loan amounts, average interest rates, the number of loans, and default rates. This data helps us identify regional trends and assess where strategic interventions or opportunities may exist.
 
-### Regional Performance Metrics
+### 4.10.2. Regional Performance Metrics
 
 Here's a table summarizing key loan performance metrics by state:
 
@@ -421,13 +401,13 @@ Here's a table summarizing key loan performance metrics by state:
 | MA    | $15,051,000       | $11,489             | 11.87%                | 1,310           | 11.68            |
 | ...   | ...               | ...                 | ...                   | ...             | ...              |
 
-### Insights and Opportunities
+### 4.10.3. Key Insights
 
 - **High Default Rates in Specific Regions**: Florida (17.49%) and Georgia (15.35%) show higher default rates compared to other states, suggesting potential risk factors or economic conditions that may warrant closer analysis and targeted risk management strategies.
 - **High Loan Demand Regions**: California, New York, and Texas lead in total loan amounts and number of loans, indicating significant market activity and potential for further growth or increased financial product offerings.
 - **Interest Rate Variability**: States like California and New Jersey have higher average interest rates, reflecting potentially higher risk pricing strategies or different customer credit profiles.
 
-### Strategic Recommendations
+### 4.10.4. Recommendations
 
 - **Risk Mitigation Initiatives**: In regions with high default rates, consider introducing more rigorous credit screening processes or risk-adjusted pricing models to mitigate potential losses.
 - **Marketing and Product Expansion**: In states with high loan volumes and robust performance, explore opportunities for expanding product offerings or marketing efforts to capitalize on strong demand.
@@ -437,9 +417,9 @@ Here's a table summarizing key loan performance metrics by state:
 
 Understanding regional variations in loan performance is crucial for optimizing our lending strategies and ensuring sustainable growth. By focusing on areas with high potential and addressing regions with risk factors effectively, we can improve overall portfolio health and maximize returns.
 
-## Conclusion and Recommendations
+## 5. Conclusion and Recommendations
 
-### Key Findings
+### 5.1. Key Findings
 
 1. **Regional Disparities in Loan Performance**: The data shows significant variation in loan performance across different states, with states like California, New York, and Texas showing higher loan activity and amounts. This contrasts sharply with states like Maine and Nebraska, which have much lower figures.
 
@@ -453,7 +433,7 @@ Understanding regional variations in loan performance is crucial for optimizing 
 
 6. **Recovery Rate**: The 56.90% Recovery Rate points to moderate success in recouping losses from defaulted loans, indicating potential areas for improvement in collection strategies.
 
-### Recommendations
+### 5.2. Recommendations
 
 1. **Enhance Risk Management in High Default Regions**: States like Florida and Georgia with high default rates should see targeted enhancements in risk assessments. Implement stricter credit evaluations and adapt lending criteria based on regional economic trends.
 
