@@ -1,4 +1,4 @@
-# Smart Lending: Enhancing Financial Decisions with Data-Driven Insights
+# Smart Lending: Loan Portfolio's Health Assessment And Monitoring
 ![Smart Lending](https://github.com/noe2019/Smart-Lending/blob/main/images/loan.gif)
 ## Table of Contents
 1. [Objectives](#objectives)
