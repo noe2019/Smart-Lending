@@ -351,13 +351,13 @@ The current Recovery Rate of 56.90% is a vital metric that highlights both the s
 
 The following graph illustrates the total interest income generated from various loan products in our portfolio:
 
-![Total Interest Income by Loan Product](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_IINC)
+![Total Interest Income by Loan Product](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_IINC.png)
 
 ### 4.9.2. Contribution to Total Interest Income by Loan Product
 
 The next graph shows the contribution of each loan product to the total interest income, highlighting the relative importance of each product category:
 
-![Contribution to Total Interest Income by Loan Product](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_IINC_PERCENTAGE)
+![Contribution to Total Interest Income by Loan Product](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_IINC_PERCENTAGE.png)
 
 ### 4.9.3. Detailed Profitability Metrics
 
