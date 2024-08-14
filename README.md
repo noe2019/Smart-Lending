@@ -25,7 +25,7 @@
    - [Contribution to Total Interest Income by Loan Product](#contribution-to-total-interest-income-by-loan-product)
    - [Detailed Profitability Metrics](#detailed-profitability-metrics)
    - [Regional Loan Performance Analysis](#regional-loan-performance-analysis)
-6. [Automate the decision-making on future loan applications](#Automate-the-decision-making-on-future-loan-applications)
+6. [Loan Default Prediction](#loan-default-prediction)
 7. [Conclusion and Recommendations](#conclusion-and-recommendations)
 8. [Power BI dashboard](#power-BI-dashboard)
 ---
@@ -413,7 +413,7 @@ Here's a table summarizing key loan performance metrics by state:
 - **Marketing and Product Expansion**: In states with high loan volumes and robust performance, explore opportunities for expanding product offerings or marketing efforts to capitalize on strong demand.
 - **Customized Financial Solutions**: Tailor financial products to meet the specific needs of regions with unique performance characteristics to enhance customer satisfaction and profitability.
 
-## 6. Automating loan application decisions
+## 6. Loan Default prediction
 
 ## 7. Conclusion and Recommendations
 
@@ -431,7 +431,7 @@ Here's a table summarizing key loan performance metrics by state:
 
 6. **Recovery Rate**: The 56.90% Recovery Rate points to moderate success in recouping losses from defaulted loans, indicating potential areas for improvement in collection strategies.
 
-#### 6.2. Recommendations
+#### 7.2. Recommendations
 
 1. **Enhance Risk Management in High Default Regions**: States like Florida and Georgia with high default rates should see targeted enhancements in risk assessments. Implement stricter credit evaluations and adapt lending criteria based on regional economic trends.
 
