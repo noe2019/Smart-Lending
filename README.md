@@ -151,7 +151,7 @@ Analyze the Key Performance Indicators (KPIs) of the loan portfolio, in order to
    - **Current Loans**: Comprising 2.71% of the portfolio, these loans represent ongoing payments with a higher average loan amount, indicating a potential area for increased monitoring to ensure they do not default.
    - **Late Loans**: Although minimal in number (0.14%), the late loans have the highest average loan amount, suggesting that they could become a significant risk if they progress to default status.
 
-### 4.1.4. Recommendations
+##### 4.1.4. Recommendations
 
 1. **Strengthen Monitoring and Collection Efforts for Charged Off and Late Loans**:
    - Focus on improving collection strategies to reduce the percentage of Charged Off loans.
@@ -169,27 +169,21 @@ Analyze the Key Performance Indicators (KPIs) of the loan portfolio, in order to
 
 By implementing these strategies, the bank can improve its overall loan portfolio health, reduce defaults, and enhance profitability.
 
-
 ### 4.2. Default Rate in Loan Portfolio
 
-### 4.2.1. Default Rate Overview
+##### 4.2.1. Default Rate Overview
 
 The Default Rate in the loan portfolio currently stands at **13.82%**. This metric is important as it indicates the percentage of the total number of loans that have been written off as losses after the borrowers failed to repay.
 
-### 4.2.2. Key Insights
+##### 4.2.2. Key Insights
 
-- **Financial Impact**: A Default Rate of 13.82% is substantial and can significantly affect the profitability of the loan portfolio. It suggests that a 13.82% of the loans extended are unlikely to be repaid, leading to financial losses.
 - **Risk Assessment**: This rate is indicative of the risk level associated with the lending decisions. This rate may point to inadequacies in the credit risk assessment processes of the bank.
 
-### 4.2.3. Recommendations
+##### 4.2.3. Recommendations
 
 - **Enhanced Credit Scoring**: Improving the criteria and models used for assessing borrower creditworthiness could help in reducing the default rate.
 - **Risk-Based Pricing**: Adjusting interest rates based on the calculated risk of loan defaults can offset potential losses and manage the risk-return profile more effectively.
 - **Collection Efforts**: Strengthening the collection process and follow-up on late payments can prevent loans from progressing to default status.
-
-### Conclusion
-
-The 13.82% Default Rate poses challenges but also highlights opportunities for improving risk management and credit assessment strategies. By addressing the factors contributing to this rate, the portfolio can achieve better performance and lower financial risks.
 
 ### 4.3. Delinquency Rate
 
@@ -212,12 +206,12 @@ While the Default Rate of 13.82% poses significant challenges, the low Delinquen
 
 The average loan amount within our portfolio stands at **$11,296.07**. This figure is crucial for understanding the typical financial commitment undertaken by borrowers and the potential risk exposure for the lender.
 
-### 4.4.1. Key Insights
+##### 4.4.1. Key Insights
 
 - **Portfolio Exposure**: The average loan amount reflects the level of exposure that the loan portfolio has. Larger average loan sizes might indicate higher individual risk per loan, impacting the overall risk profile of the portfolio.
 - **Profitability Potential**: This amount also affects potential profitability. Higher loan amounts can lead to increased interest revenue but also carry greater risk of significant losses if defaults occur.
 
-### 4.4.2. Recommendations
+##### 4.4.2. Recommendations
 
 - **Risk Diversification**: To manage exposure, diversifying the types of loans offered can help spread out risk, particularly if larger loans are a significant portion of the portfolio.
 - **Loan Pricing Strategy**: Adjusting the pricing strategy to account for the risk associated with larger average loans can optimize profitability while managing risk effectively.
@@ -228,13 +222,13 @@ The average loan amount of $11,296.07 plays a critical role in determining the r
 
 
 ### 4.5. Interest Rate Analysis
-## 4.5.1. Interest Rate Summary Statistics
+##### 4.5.1. Interest Rate Summary Statistics
 
 ![Interest Rate Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_IR.png)
 
 This section presents a detailed summary of the interest rates across our loan portfolio. The following table summarizes key statistical measures:
 
-### 4.5.2. Summary Statistics Table
+##### 4.5.2. Summary Statistics Table
 
 | Statistical Measure | Value  | Description                                  |
 |---------------------|--------|----------------------------------------------|
@@ -247,27 +241,27 @@ This section presents a detailed summary of the interest rates across our loan p
 | 75th Percentile     | 14.59% | 75% of loans have interest rates below this  |
 | Maximum Rate        | 24.59% | Highest interest rate in the portfolio       |
 
-### 4.5.3. Key Insights
+##### 4.5.3. Key Insights
 
 - **Distribution Overview**: The distribution is moderately spread around the mean, indicating variability in the risk profiles of borrowers.
 - **Risk Indicators**: The range from the minimum to the maximum interest rate highlights the diverse creditworthiness among borrowers.
 - **Loan Pricing**: The quartile values suggest a tiered pricing strategy that aligns interest rates with assessed credit risk.
 
-### 4.5.4. Recommendations
+##### 4.5.4. Recommendations
 
 - **Loan Approval Criteria**: The variation in rates calls for robust loan approval criteria that consider borrower risk more effectively.
 - **Interest Rate Strategy**: Adjusting the interest rate strategy may help manage risk more efficiently and align with market competition.
 - **Portfolio Management**: Continuous monitoring of the interest rate distribution is essential for maintaining a healthy balance between risk and return.
 
-## 4.6. Credit Grade Distribution Analysis
+### 4.6. Credit Grade Distribution Analysis
 
-### 4.6.1. Overview
+##### 4.6.1. Overview
 
 The distribution of credit grades across our loan portfolio is visualized in the histogram below. This analysis is crucial for understanding the risk profile of our borrowers based on their assigned credit grades from A to G.
 
 ![Credit Grade Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_CC.png)
 
-### 4.6.2. Credit Grade Counts
+##### 4.6.2. Credit Grade Counts
 
 This table shows the exact count of loans per credit grade, reflecting the creditworthiness of our borrowers:
 
@@ -281,13 +275,13 @@ This table shows the exact count of loans per credit grade, reflecting the credi
 | F            | 1,028           |
 | G            | 313             |
 
-### 4.6.3. Key Insights
+##### 4.6.3. Key Insights
 
 - **Dominant Grades**: Grades B and A are the most prevalent in the portfolio, indicating a substantial number of borrowers with good to excellent creditworthiness.
 - **Risk Distribution**: The number of loans decreases as the credit grade worsens from B to G, which is typical as fewer borrowers qualify for loans as risk increases.
 - **High-Risk Loans**: Loans in grades D through G represent higher risk but are less frequent, which helps mitigate overall portfolio risk.
 
-### 4.6.4. Recommendations
+##### 4.6.4. Recommendations
 
 - **Portfolio Diversification**: The spread across various credit grades suggests a diversified risk profile, with a concentration in the mid to high credit quality.
 - **Loan Pricing Strategy**: Higher-risk grades (D, E, F, G) likely carry higher interest rates to compensate for the increased risk, impacting the portfolio’s yield.
@@ -299,24 +293,24 @@ The credit grade distribution highlights a well-managed risk diversification str
 
 ## 4.7. Debt-to-Income (DTI) Ratio Distribution Analysis
 
-### 4.7.1. Overview
+##### 4.7.1. Overview
 
 The distribution of Debt-to-Income (DTI) ratios across our loan portfolio is visualized in the histogram below. This analysis helps us evaluate the financial health and repayment capacity of our borrowers.
 
 ![Debt-to-Income Ratio Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_TDI.png)
 
-### 4.7.2. DTI Ratio Statistics
+##### 4.7.2. DTI Ratio Statistics
 
 - **Average DTI Ratio**: 13%
 - **Distribution Characteristics**: The histogram peaks around the DTI ratio of 0.13, indicating that the average borrower has a debt load that is 13% of their income.
 
-### 4.7.3. Key Insights
+##### 4.7.3. Key Insights
 
 - **Credit Risk**: The bulk of our loan portfolio has a DTI ratio centered around 13%, which is generally considered manageable in consumer lending. This central clustering suggests that most borrowers are not excessively burdened by debt.
 - **Financial Health**: The DTI ratios predominantly range between 5% and 25%, with fewer borrowers at the higher end of the spectrum. This spread indicates a relatively healthy financial status among the majority of our borrowers, where their income levels are sufficient to manage the debt they have incurred.
 - **Risk Concentration**: The tail on the right side of the distribution, extending towards a DTI ratio of 30%, highlights a smaller segment of borrowers with higher debt loads relative to their income. These individuals represent a higher risk as they may face difficulties in meeting their loan obligations, especially under financially stressful conditions.
 
-### 4.7.4. Recommendations
+##### 4.7.4. Recommendations
 
 - **Lending Strategies**: Consideration may be given to tightening credit approval criteria or adjusting loan terms for applicants with higher DTI ratios to mitigate potential defaults.
 - **Risk Management**: Continuous monitoring of DTI ratios is essential, particularly focusing on trends that may shift more borrowers towards higher DTI categories.
