@@ -75,7 +75,7 @@ The dataset includes twenty-four (24) features (columns, variables):
 | **total_acc**             | The total number of credit accounts the borrower has.                                         | Numeric (integer)   |
 | **total_payment**         | The total amount paid by the borrower so far, including principal and interest.               | Numeric (float)     |
 
-![Data Description](https://raw.githubusercontent.com/noe2019/Smart-Lending/main/images/desc.gif)
+![Data Description](https://github.com/noe2019/Smart-Lending/blob/main/Loan%20portfolio's%20health%20assessment/images/desc.gif)
 
 #### 2.2. Data Source and Collection
 
@@ -144,7 +144,7 @@ Analyze the Key Performance Indicators (KPIs) of the loan portfolio, in order to
 
 ##### 4.1.2. Graphical Representation
 
-![Loan Status Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/loan_distribution2.png)
+![Loan Status Distribution](https://github.com/noe2019/Smart-Lending/blob/main/Loan%20portfolio's%20health%20assessment/images/loan_distribution2.png)
 
 ##### 4.1.3. Key Insights
 
@@ -228,7 +228,7 @@ The average loan amount within our portfolio stands at **$11,296.07**. This figu
 ### 4.5. Interest Rate Analysis
 ##### 4.5.1. Interest Rate Summary Statistics
 
-![Interest Rate Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_IR.png)
+![Interest Rate Distribution](https://github.com/noe2019/Smart-Lending/blob/main/Loan%20portfolio's%20health%20assessment/images/dist_IR.png)
 
 This section presents a detailed summary of the interest rates across our loan portfolio. The following table summarizes key statistical measures:
 
@@ -263,7 +263,7 @@ This section presents a detailed summary of the interest rates across our loan p
 
 The distribution of credit grades across our loan portfolio is visualized in the histogram below. This analysis is crucial for understanding the risk profile of our borrowers based on their assigned credit grades from A to G.
 
-![Credit Grade Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_CC.png)
+![Credit Grade Distribution](https://github.com/noe2019/Smart-Lending/blob/main/Loan%20portfolio's%20health%20assessment/images/dist_CC.png)
 
 ##### 4.6.2. Credit Grade Counts
 
@@ -297,7 +297,7 @@ This table shows the exact count of loans per credit grade, reflecting the credi
 
 The distribution of Debt-to-Income (DTI) ratios across our loan portfolio is visualized in the histogram below. This analysis helps us evaluate the financial health and repayment capacity of our borrowers.
 
-![Debt-to-Income Ratio Distribution](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_TDI.png)
+![Debt-to-Income Ratio Distribution](https://github.com/noe2019/Smart-Lending/blob/main/Loan%20portfolio's%20health%20assessment/images/dist_TDI.png)
 
 ##### 4.7.2. DTI Ratio Statistics
 
@@ -343,13 +343,13 @@ The Recovery Rate of our loan portfolio is currently at **56.90%**. This metric 
 
 The following graph illustrates the total interest income generated from various loan products in our portfolio:
 
-![Total Interest Income by Loan Product](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_IINC.png)
+![Total Interest Income by Loan Product](https://github.com/noe2019/Smart-Lending/blob/main/Loan%20portfolio's%20health%20assessment/images/dist_IINC.png)
 
 #### 5.2. Contribution to Total Interest Income by Loan Product
 
 The next graph shows the contribution of each loan product to the total interest income, highlighting the relative importance of each product category:
 
-![Contribution to Total Interest Income by Loan Product](https://github.com/noe2019/Smart-Lending/blob/main/images/dist_IINC_PERCENTAGE.png)
+![Contribution to Total Interest Income by Loan Product](https://github.com/noe2019/Smart-Lending/blob/main/Loan%20portfolio's%20health%20assessment/images/dist_IINC_PERCENTAGE.png)
 
 #### 5.3. Detailed Profitability Metrics
 
