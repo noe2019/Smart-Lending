@@ -27,6 +27,7 @@
    - [Regional Loan Performance Analysis](#regional-loan-performance-analysis)
 6. [Automate the decision-making on future loan applications](#Automate-the-decision-making-on-future-loan-applications)
 7. [Conclusion and Recommendations](#conclusion-and-recommendations)
+8. [Power BI dashboard](#power-BI-dashboard)
 ---
 ## 1. Objectives
 
