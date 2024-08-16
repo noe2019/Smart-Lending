@@ -414,7 +414,172 @@ Here's a table summarizing key loan performance metrics by state:
 - **Customized Financial Solutions**: Tailor financial products to meet the specific needs of regions with unique performance characteristics to enhance customer satisfaction and profitability.
 
 ## 6. Loan Default prediction
+Performing Exploratory Data Analysis (EDA) on predictions and their associated probabilities is a crucial step in understanding the behavior and performance of your machine learning model. This type of EDA helps you explore how the model's predictions are distributed, how confident the model is in its predictions, and identify any potential areas of improvement or risk.
 
+Here’s a guide on how to conduct EDA on predictions and probabilities using Python, including relevant visualizations and statistical analysis.
+
+### 1. **Loading the Necessary Libraries and Data**
+First, ensure that you have the necessary libraries installed and your data ready for analysis.
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import joblib
+
+# Load the model and preprocessing tools
+model = joblib.load('best_model_name_loan_status_predictor.pkl')
+scaler = joblib.load('scaler.pkl')
+label_encoders = joblib.load('label_encoders.pkl')
+
+# Load the unseen data for analysis
+unseen_df = pd.read_csv('unseen_data.csv')
+
+# Assume unseen data is preprocessed similarly to the training data
+# Standardize the features
+X_unseen = scaler.transform(unseen_df)
+
+# Make predictions and calculate probabilities
+predictions = model.predict(X_unseen)
+probabilities = model.predict_proba(X_unseen)
+
+# Add predictions and probabilities to the dataframe
+unseen_df['Predicted_Loan_Status'] = predictions
+unseen_df['Probability_Fully_Paid'] = probabilities[:, 0]
+unseen_df['Probability_Charged_Off'] = probabilities[:, 1]
+
+# Replace encoded labels with human-readable labels if necessary
+label_mapping = {0: 'Fully Paid', 1: 'Charged Off'}
+unseen_df['Predicted_Loan_Status'] = unseen_df['Predicted_Loan_Status'].map(label_mapping)
+```
+
+### 2. **Summary Statistics of Predictions and Probabilities**
+Start by generating some basic statistics to understand the general distribution of your predictions and their associated probabilities.
+
+```python
+# Summary statistics for probabilities
+print(unseen_df[['Probability_Fully_Paid', 'Probability_Charged_Off']].describe())
+
+# Class distribution of predictions
+class_distribution = unseen_df['Predicted_Loan_Status'].value_counts(normalize=True) * 100
+print("Class Distribution of Predictions:\n", class_distribution)
+
+# Mean and standard deviation of probabilities by predicted class
+prob_stats = unseen_df.groupby('Predicted_Loan_Status').agg({
+    'Probability_Fully_Paid': ['mean', 'std'],
+    'Probability_Charged_Off': ['mean', 'std']
+})
+print("Probability Statistics by Predicted Class:\n", prob_stats)
+```
+
+### 3. **Visualizing the Probability Distributions**
+Visualizations can help identify patterns and potential issues with model predictions.
+
+#### Histogram of Predicted Probabilities
+
+```python
+# Plotting the distribution of probabilities for each class
+plt.figure(figsize=(12, 6))
+
+# Probability of Fully Paid
+plt.subplot(1, 2, 1)
+sns.histplot(unseen_df['Probability_Fully_Paid'], bins=20, kde=True, color='blue')
+plt.title('Distribution of Probabilities for Fully Paid')
+plt.xlabel('Probability of Fully Paid')
+plt.ylabel('Frequency')
+
+# Probability of Charged Off
+plt.subplot(1, 2, 2)
+sns.histplot(unseen_df['Probability_Charged_Off'], bins=20, kde=True, color='red')
+plt.title('Distribution of Probabilities for Charged Off')
+plt.xlabel('Probability of Charged Off')
+plt.ylabel('Frequency')
+
+plt.tight_layout()
+plt.show()
+```
+
+#### Boxplot of Probabilities by Predicted Class
+
+```python
+# Boxplot to compare the distributions of probabilities by predicted class
+plt.figure(figsize=(10, 6))
+
+sns.boxplot(x='Predicted_Loan_Status', y='Probability_Charged_Off', data=unseen_df)
+plt.title('Boxplot of Charged Off Probabilities by Predicted Class')
+plt.xlabel('Predicted Loan Status')
+plt.ylabel('Probability of Charged Off')
+plt.show()
+```
+
+### 4. **Analyzing Confidence Levels**
+
+Understanding the confidence levels of your predictions can reveal how certain or uncertain your model is about different classes.
+
+```python
+# Adding a confidence score (difference between class probabilities)
+unseen_df['Confidence_Score'] = abs(unseen_df['Probability_Fully_Paid'] - unseen_df['Probability_Charged_Off'])
+
+# Summary statistics of confidence scores
+confidence_summary = unseen_df['Confidence_Score'].describe()
+print("Confidence Score Summary:\n", confidence_summary)
+
+# Visualizing confidence scores
+plt.figure(figsize=(8, 6))
+sns.histplot(unseen_df['Confidence_Score'], bins=20, kde=True, color='purple')
+plt.title('Distribution of Confidence Scores')
+plt.xlabel('Confidence Score')
+plt.ylabel('Frequency')
+plt.show()
+
+# Scatter plot of confidence scores by predicted class
+plt.figure(figsize=(10, 6))
+sns.scatterplot(x='Confidence_Score', y='Probability_Charged_Off', hue='Predicted_Loan_Status', data=unseen_df)
+plt.title('Confidence Score vs. Probability of Charged Off by Predicted Class')
+plt.xlabel('Confidence Score')
+plt.ylabel('Probability of Charged Off')
+plt.show()
+```
+
+### 5. **Identifying High-Risk and Low-Risk Predictions**
+Segmenting predictions based on their risk levels can help prioritize further actions.
+
+```python
+# Define risk levels based on predicted probabilities
+unseen_df['Risk_Level'] = pd.cut(unseen_df['Probability_Charged_Off'],
+                                  bins=[0, 0.25, 0.75, 1],
+                                  labels=['Low Risk', 'Moderate Risk', 'High Risk'])
+
+# Distribution of risk levels
+risk_distribution = unseen_df['Risk_Level'].value_counts(normalize=True) * 100
+print("Risk Level Distribution:\n", risk_distribution)
+
+# Visualizing risk levels by class
+plt.figure(figsize=(8, 6))
+sns.countplot(x='Risk_Level', hue='Predicted_Loan_Status', data=unseen_df, palette='coolwarm')
+plt.title('Risk Levels by Predicted Loan Status')
+plt.xlabel('Risk Level')
+plt.ylabel('Count')
+plt.show()
+```
+
+### 6. **Insights Derived from the EDA**
+Based on the EDA, you can derive several insights:
+
+1. **Confidence Levels**: Identify cases where the model is highly confident versus cases where it is uncertain. For uncertain cases, further investigation or alternative decision strategies may be needed.
+  
+2. **Risk Assessment**: Segmenting the predictions into different risk levels allows for targeted actions. For example, loans predicted with high confidence of being "Charged Off" might be flagged for review or intervention.
+
+3. **Model Behavior**: By examining the distributions of predicted probabilities, you can assess whether the model is overly confident in certain predictions or if it's struggling to distinguish between classes.
+
+4. **Potential Model Improvements**: If you find that a significant portion of predictions has low confidence scores or that the model struggles with certain types of data, these insights can inform future model refinements.
+
+### 7. **Next Steps**
+- **Threshold Adjustment**: Based on your analysis, you might consider adjusting the decision threshold to balance between precision and recall.
+- **Feature Importance**: Explore which features are driving predictions and refine feature selection if necessary.
+- **Model Tuning**: If certain segments of the data are poorly predicted, consider tuning the model or using an ensemble approach to improve performance.
+
+By performing EDA on your predictions and their probabilities, you can better understand the strengths and weaknesses of your model, leading to more informed decision-making and potential model improvements.
 ## 7. Conclusion and Recommendations
 
 #### 7.1. Key Findings
