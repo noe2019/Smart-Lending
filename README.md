@@ -415,23 +415,15 @@ Here's a table summarizing key loan performance metrics by state:
 
 ## 6. Loan Default prediction
 
-Here’s how you can structure the key insights and recommendations in a GitHub README format:
-
-##### Key Insights
+##### 6.1. Key Insights
 
 1. **High Charged Off Rate**:
-   - **28.64%** of the total loans have been "Charged Off," indicating a significant portion of the loan portfolio is at risk.
-  
-2. **Majority of Loans Fully Paid**:
-   - **71.36%** of the loans are "Fully Paid," showing strong performance overall, but the high rate of charged-off loans still represents a concern.
-  
-3. **Significant Financial Loss from Charged Off Loans**:
-   - The total amount for "Charged Off" loans stands at **$6,219,425.00**, a substantial loss when compared to the **$11,684,675.00** from "Fully Paid" loans.
-
-4. **Potential Misalignment in Risk Assessment**:
+   - According to the predictions, **28.64%** of the total current loans will be "Charged Off," indicating an even higher portion of the loan portfolio is at risk. 
+2. **Significant Financial Loss from Charged Off Loans**:
+   - The total amount for current loans that will be "Charged Off" stands at **$6,219,425.00**, a substantial loss when compared to the **$11,684,675.00** from "Fully Paid" loans.
+3. **Potential Misalignment in Risk Assessment**:
    - The large amount of charged-off loans suggests a need for better risk assessment and borrower evaluation processes.
-
-##### Recommendations
+##### 6.2. Recommendations
 
 1. **Enhance Risk Assessment and Credit Scoring Models**:
    - Improve credit scoring models by incorporating more detailed borrower data and advanced analytics to better identify high-risk borrowers.
@@ -445,84 +437,9 @@ Here’s how you can structure the key insights and recommendations in a GitHub 
 4. **Diversify Loan Portfolio**:
    - Explore diversification into lower-risk markets or different loan products to reduce overall portfolio risk.
 
-5. **Increase Borrower Education and Support**:
-   - Provide resources such as financial education workshops and tools to help borrowers manage their loans better, potentially reducing default rates.
-
-6. **Leverage Machine Learning for Predictive Insights**:
+5. **Leverage Machine Learning for Predictive Insights**:
    - Use machine learning models to improve the accuracy of risk predictions and lending decisions.
-
-7. **Conduct a Post-Mortem Analysis on Charged-Off Loans**:
-   - Analyze the charged-off loans to identify common characteristics and refine lending strategies accordingly.
      
-### 3. **Visualizing the Probability Distributions**
-Visualizations can help identify patterns and potential issues with model predictions.
-
-#### Histogram of Predicted Probabilities
-
-```python
-# Plotting the distribution of probabilities for each class
-plt.figure(figsize=(12, 6))
-
-# Probability of Fully Paid
-plt.subplot(1, 2, 1)
-sns.histplot(unseen_df['Probability_Fully_Paid'], bins=20, kde=True, color='blue')
-plt.title('Distribution of Probabilities for Fully Paid')
-plt.xlabel('Probability of Fully Paid')
-plt.ylabel('Frequency')
-
-# Probability of Charged Off
-plt.subplot(1, 2, 2)
-sns.histplot(unseen_df['Probability_Charged_Off'], bins=20, kde=True, color='red')
-plt.title('Distribution of Probabilities for Charged Off')
-plt.xlabel('Probability of Charged Off')
-plt.ylabel('Frequency')
-
-plt.tight_layout()
-plt.show()
-```
-
-#### Boxplot of Probabilities by Predicted Class
-
-```python
-# Boxplot to compare the distributions of probabilities by predicted class
-plt.figure(figsize=(10, 6))
-
-sns.boxplot(x='Predicted_Loan_Status', y='Probability_Charged_Off', data=unseen_df)
-plt.title('Boxplot of Charged Off Probabilities by Predicted Class')
-plt.xlabel('Predicted Loan Status')
-plt.ylabel('Probability of Charged Off')
-plt.show()
-```
-
-### 4. **Analyzing Confidence Levels**
-
-Understanding the confidence levels of your predictions can reveal how certain or uncertain your model is about different classes.
-
-```python
-# Adding a confidence score (difference between class probabilities)
-unseen_df['Confidence_Score'] = abs(unseen_df['Probability_Fully_Paid'] - unseen_df['Probability_Charged_Off'])
-
-# Summary statistics of confidence scores
-confidence_summary = unseen_df['Confidence_Score'].describe()
-print("Confidence Score Summary:\n", confidence_summary)
-
-# Visualizing confidence scores
-plt.figure(figsize=(8, 6))
-sns.histplot(unseen_df['Confidence_Score'], bins=20, kde=True, color='purple')
-plt.title('Distribution of Confidence Scores')
-plt.xlabel('Confidence Score')
-plt.ylabel('Frequency')
-plt.show()
-
-# Scatter plot of confidence scores by predicted class
-plt.figure(figsize=(10, 6))
-sns.scatterplot(x='Confidence_Score', y='Probability_Charged_Off', hue='Predicted_Loan_Status', data=unseen_df)
-plt.title('Confidence Score vs. Probability of Charged Off by Predicted Class')
-plt.xlabel('Confidence Score')
-plt.ylabel('Probability of Charged Off')
-plt.show()
-```
-
 ### 5. **Identifying High-Risk and Low-Risk Predictions**
 Segmenting predictions based on their risk levels can help prioritize further actions.
 
@@ -544,17 +461,6 @@ plt.xlabel('Risk Level')
 plt.ylabel('Count')
 plt.show()
 ```
-
-### 6. **Insights Derived from the EDA**
-Based on the EDA, you can derive several insights:
-
-1. **Confidence Levels**: Identify cases where the model is highly confident versus cases where it is uncertain. For uncertain cases, further investigation or alternative decision strategies may be needed.
-  
-2. **Risk Assessment**: Segmenting the predictions into different risk levels allows for targeted actions. For example, loans predicted with high confidence of being "Charged Off" might be flagged for review or intervention.
-
-3. **Model Behavior**: By examining the distributions of predicted probabilities, you can assess whether the model is overly confident in certain predictions or if it's struggling to distinguish between classes.
-
-4. **Potential Model Improvements**: If you find that a significant portion of predictions has low confidence scores or that the model struggles with certain types of data, these insights can inform future model refinements.
 
 ### 7. **Next Steps**
 - **Threshold Adjustment**: Based on your analysis, you might consider adjusting the decision threshold to balance between precision and recall.
