@@ -414,64 +414,46 @@ Here's a table summarizing key loan performance metrics by state:
 - **Customized Financial Solutions**: Tailor financial products to meet the specific needs of regions with unique performance characteristics to enhance customer satisfaction and profitability.
 
 ## 6. Loan Default prediction
-Performing Exploratory Data Analysis (EDA) on predictions and their associated probabilities is a crucial step in understanding the behavior and performance of your machine learning model. This type of EDA helps you explore how the model's predictions are distributed, how confident the model is in its predictions, and identify any potential areas of improvement or risk.
 
-Here’s a guide on how to conduct EDA on predictions and probabilities using Python, including relevant visualizations and statistical analysis.
+Here’s how you can structure the key insights and recommendations in a GitHub README format:
 
-### 1. **Loading the Necessary Libraries and Data**
-First, ensure that you have the necessary libraries installed and your data ready for analysis.
+##### Key Insights
 
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import joblib
+1. **High Charged Off Rate**:
+   - **28.64%** of the total loans have been "Charged Off," indicating a significant portion of the loan portfolio is at risk.
+  
+2. **Majority of Loans Fully Paid**:
+   - **71.36%** of the loans are "Fully Paid," showing strong performance overall, but the high rate of charged-off loans still represents a concern.
+  
+3. **Significant Financial Loss from Charged Off Loans**:
+   - The total amount for "Charged Off" loans stands at **$6,219,425.00**, a substantial loss when compared to the **$11,684,675.00** from "Fully Paid" loans.
 
-# Load the model and preprocessing tools
-model = joblib.load('best_model_name_loan_status_predictor.pkl')
-scaler = joblib.load('scaler.pkl')
-label_encoders = joblib.load('label_encoders.pkl')
+4. **Potential Misalignment in Risk Assessment**:
+   - The large amount of charged-off loans suggests a need for better risk assessment and borrower evaluation processes.
 
-# Load the unseen data for analysis
-unseen_df = pd.read_csv('unseen_data.csv')
+##### Recommendations
 
-# Assume unseen data is preprocessed similarly to the training data
-# Standardize the features
-X_unseen = scaler.transform(unseen_df)
+1. **Enhance Risk Assessment and Credit Scoring Models**:
+   - Improve credit scoring models by incorporating more detailed borrower data and advanced analytics to better identify high-risk borrowers.
 
-# Make predictions and calculate probabilities
-predictions = model.predict(X_unseen)
-probabilities = model.predict_proba(X_unseen)
+2. **Strengthen Loan Monitoring and Early Intervention**:
+   - Implement robust monitoring mechanisms and early intervention strategies to manage borrower risk more effectively during the loan term.
 
-# Add predictions and probabilities to the dataframe
-unseen_df['Predicted_Loan_Status'] = predictions
-unseen_df['Probability_Fully_Paid'] = probabilities[:, 0]
-unseen_df['Probability_Charged_Off'] = probabilities[:, 1]
+3. **Review and Revise Lending Policies**:
+   - Conduct a comprehensive review of current lending policies, especially for segments with higher charge-off rates, and consider tightening approval criteria.
 
-# Replace encoded labels with human-readable labels if necessary
-label_mapping = {0: 'Fully Paid', 1: 'Charged Off'}
-unseen_df['Predicted_Loan_Status'] = unseen_df['Predicted_Loan_Status'].map(label_mapping)
-```
+4. **Diversify Loan Portfolio**:
+   - Explore diversification into lower-risk markets or different loan products to reduce overall portfolio risk.
 
-### 2. **Summary Statistics of Predictions and Probabilities**
-Start by generating some basic statistics to understand the general distribution of your predictions and their associated probabilities.
+5. **Increase Borrower Education and Support**:
+   - Provide resources such as financial education workshops and tools to help borrowers manage their loans better, potentially reducing default rates.
 
-```python
-# Summary statistics for probabilities
-print(unseen_df[['Probability_Fully_Paid', 'Probability_Charged_Off']].describe())
+6. **Leverage Machine Learning for Predictive Insights**:
+   - Use machine learning models to improve the accuracy of risk predictions and lending decisions.
 
-# Class distribution of predictions
-class_distribution = unseen_df['Predicted_Loan_Status'].value_counts(normalize=True) * 100
-print("Class Distribution of Predictions:\n", class_distribution)
-
-# Mean and standard deviation of probabilities by predicted class
-prob_stats = unseen_df.groupby('Predicted_Loan_Status').agg({
-    'Probability_Fully_Paid': ['mean', 'std'],
-    'Probability_Charged_Off': ['mean', 'std']
-})
-print("Probability Statistics by Predicted Class:\n", prob_stats)
-```
-
+7. **Conduct a Post-Mortem Analysis on Charged-Off Loans**:
+   - Analyze the charged-off loans to identify common characteristics and refine lending strategies accordingly.
+     
 ### 3. **Visualizing the Probability Distributions**
 Visualizations can help identify patterns and potential issues with model predictions.
 
