@@ -128,7 +128,7 @@ The script outputs:
 
 ## Contributors
 
-- **Your Name** - Initial work
+- **Noé Fouotsa** - Initial work
 ```
 
 ### Download the README.md file:
