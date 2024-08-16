@@ -1,7 +1,3 @@
-Here is a draft for the GitHub README file based on the content from the document:
-
----
-
 # Bank Loan Report Project
 
 ## Problem Statement
@@ -90,6 +86,7 @@ The **Loan Status Grid View** report will provide a comprehensive overview of th
 ### Dashboard 1: Summary
 
 A high-level summary of the bank's loan performance will be provided, focusing on KPIs like total loan applications, funded amounts, and received amounts.
+
 
 ### Dashboard 2: Overview
 
