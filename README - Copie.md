@@ -42,7 +42,7 @@ This project aims to provide a comprehensive analysis of a financial institution
 
 1. **Understanding Borrower Demographics**: Gain insights into the characteristics of borrowers to inform strategic decisions.
 2. **Assessing Loan Portfolio Health**: Evaluate the performance and risk factors associated with the loan portfolio.
-3. **Automating Decision-Making**: Use data-driven insights to automate and improve the decision-making process for future loan applications.
+3. **Automating Decision-Making**: Use data-driven insights to predict which current loan owner will most likely default a take proactive actions. Then build a model to assist decision-making for loan applications.
 
 ## 2. Data Overview
 
