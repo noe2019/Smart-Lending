@@ -415,6 +415,59 @@ Here's a table summarizing key loan performance metrics by state:
 
 ## 6. Loan Default prediction
 
+##### 6.1. Key Insights
+
+1. **High Charged Off Rate**:
+   - According to the predictions, **28.64%** of the total current loans will be "Charged Off," indicating an even higher portion of the loan portfolio is at risk. 
+2. **Significant Financial Loss from Charged Off Loans**:
+   - The total amount for current loans that will be "Charged Off" stands at **$6,219,425.00**, a substantial loss when compared to the **$11,684,675.00** from "Fully Paid" loans.
+3. **Potential Misalignment in Risk Assessment**:
+   - The large amount of charged-off loans suggests a need for better risk assessment and borrower evaluation processes.
+##### 6.2. Recommendations
+
+1. **Enhance Risk Assessment and Credit Scoring Models**:
+   - Improve credit scoring models by incorporating more detailed borrower data and advanced analytics to better identify high-risk borrowers.
+
+2. **Strengthen Loan Monitoring and Early Intervention**:
+   - Implement robust monitoring mechanisms and early intervention strategies to manage borrower risk more effectively during the loan term.
+
+3. **Review and Revise Lending Policies**:
+   - Conduct a comprehensive review of current lending policies, especially for segments with higher charge-off rates, and consider tightening approval criteria.
+
+4. **Diversify Loan Portfolio**:
+   - Explore diversification into lower-risk markets or different loan products to reduce overall portfolio risk.
+
+5. **Leverage Machine Learning for Predictive Insights**:
+   - Use machine learning models to improve the accuracy of risk predictions and lending decisions.
+     
+### 5. **Identifying High-Risk and Low-Risk Predictions**
+Segmenting predictions based on their risk levels can help prioritize further actions.
+
+```python
+# Define risk levels based on predicted probabilities
+unseen_df['Risk_Level'] = pd.cut(unseen_df['Probability_Charged_Off'],
+                                  bins=[0, 0.25, 0.75, 1],
+                                  labels=['Low Risk', 'Moderate Risk', 'High Risk'])
+
+# Distribution of risk levels
+risk_distribution = unseen_df['Risk_Level'].value_counts(normalize=True) * 100
+print("Risk Level Distribution:\n", risk_distribution)
+
+# Visualizing risk levels by class
+plt.figure(figsize=(8, 6))
+sns.countplot(x='Risk_Level', hue='Predicted_Loan_Status', data=unseen_df, palette='coolwarm')
+plt.title('Risk Levels by Predicted Loan Status')
+plt.xlabel('Risk Level')
+plt.ylabel('Count')
+plt.show()
+```
+
+### 7. **Next Steps**
+- **Threshold Adjustment**: Based on your analysis, you might consider adjusting the decision threshold to balance between precision and recall.
+- **Feature Importance**: Explore which features are driving predictions and refine feature selection if necessary.
+- **Model Tuning**: If certain segments of the data are poorly predicted, consider tuning the model or using an ensemble approach to improve performance.
+
+By performing EDA on your predictions and their probabilities, you can better understand the strengths and weaknesses of your model, leading to more informed decision-making and potential model improvements.
 ## 7. Conclusion and Recommendations
 
 #### 7.1. Key Findings

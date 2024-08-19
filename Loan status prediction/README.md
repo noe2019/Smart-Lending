@@ -1,6 +1,3 @@
-Here is the downloadable GitHub README in `.md` format:
-
-```markdown
 # Loan Status Prediction with Machine Learning
 
 This repository contains a script for predicting the loan status (`Charged Off` or `Fully Paid`) using various machine learning models. The script also includes model evaluation, feature importance analysis, and explanation of model predictions using LIME (Local Interpretable Model-Agnostic Explanations).
@@ -129,10 +126,3 @@ The script outputs:
 ## Contributors
 
 - **Noé Fouotsa** - Initial work
-```
-
-### Download the README.md file:
-
-I will provide you with the content in a downloadable format as a markdown file.
-
-[Download README.md](https://downfile.herokuapp.com/file/6508/README.md?dl=1)
