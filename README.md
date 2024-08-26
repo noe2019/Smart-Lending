@@ -36,7 +36,7 @@
    - 6.5 [Proactive Loan Monitoring](#proactive-loan-monitoring)
    - 6.6 [Continuous Data Analysis and Improvement](#continuous-data-analysis-and-improvement)
 
-## Objective
+## I. Objective
 
 This project aims to provide a comprehensive analysis of a financial institution's loan portfolio with the following key objectives:
 
@@ -44,7 +44,7 @@ This project aims to provide a comprehensive analysis of a financial institution
 2. **Assess Loan Portfolio Health**: Evaluate key performance metrics, including loan application volumes, funded amounts, received amounts, and default rates, to identify trends and assess risk.
 3. **Automate Decision-Making**: Use predictive modeling to identify borrowers likely to default, enabling proactive risk management and optimized loan approval processes.
 
-## Data Source and Tools
+## II. Data Source and Tools
 
 ### Data Sources
 - **Loan Application Data**: Information on loan applications, including purpose, funded amount, and status.
@@ -60,7 +60,7 @@ The dataset used in this project is available for download [here](https://drive.
 - **Excel**: For initial data management and preprocessing tasks.
 - **DAX (Data Analysis Expressions)**: Used within Power BI to create measures and calculated columns for analysis.
 
-## Data Analysis Process
+## III. Data Analysis Process
 
 ### 1. Data Collection
 The data was sourced from the bank's internal systems, focusing on a dataset containing 38,576 loan applications recorded over four years (January 1, 2020, to December 31, 2023). The dataset includes 24 features detailing loan and borrower characteristics, such as loan amount, interest rate, loan status, and borrower demographics.
@@ -87,7 +87,7 @@ Power BI dashboards were created to provide stakeholders with clear, actionable 
 ### 5. Testing and Validation
 All data and visualizations were rigorously tested for accuracy. This included cross-verifying calculations with raw data and ensuring correct functionality of interactive features like slicers and filters in Power BI.
 
-## Reproducibility: SQL and DAX Queries
+## IV. Reproducibility: SQL and DAX Queries
 
 To ensure the dashboards are reproducible, below are the SQL and DAX queries used for each section:
 
@@ -243,7 +243,7 @@ TotalAmountReceived_Filtered = SUM(FilteredLoanData[ReceivedAmount])
 4. **Apply Filters**: Use Power BI's slicers and filters to enable dynamic interactions, allowing users to drill down into specific segments of the data based on criteria such as State, Grade, and Loan Type.
 
 
-## Key Findings
+## V. Key Findings
 
 ### 1. **Loan Portfolio Performance**
 - **Steady Growth in Loan Applications**: The analysis showed a steady increase in loan applications over the four-year period, with a notable peak in December. This trend suggests strong demand for loans, particularly towards the end of the year.
@@ -259,7 +259,7 @@ TotalAmountReceived_Filtered = SUM(FilteredLoanData[ReceivedAmount])
 - **High-Yield Loan Products**: Debt consolidation loans and credit card loans were identified as the most profitable products, contributing significantly to the bank's interest income. These products should be prioritized for future growth and expansion.
 - **Regional Performance Variations**: States with higher loan application volumes, such as California and New York, also showed varying levels of default risk. This suggests that while these regions are lucrative markets, they also require stringent risk management practices.
 
-## Recommendations
+## VI. Recommendations
 
 ### 1. **Focus on High-Yield Products**
 - **Expand Debt Consolidation and Credit Card Loans**: Given the profitability of debt consolidation and credit card loans, the bank should prioritize and expand these products. Targeted marketing campaigns could further increase application volumes in these categories, enhancing overall profitability.
