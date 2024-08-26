@@ -1,5 +1,44 @@
 # Bank Loan Portfolio Analysis and Reporting
 ---
+Here's a table of contents generated for the document titled "Bank Loan Portfolio Analysis and Reporting." This table of contents provides a structured overview, allowing readers to easily navigate through the key sections of the document.
+
+---
+
+### Table of Contents
+
+1. [Objective](#objective)
+2. [Data Source and Tools](#data-source-and-tools)
+   - 2.1 [Data Sources](#data-sources)
+   - 2.2 [Data Access](#data-access)
+   - 2.3 [Tools and Technologies](#tools-and-technologies)
+3. [Data Analysis Process](#data-analysis-process)
+   - 3.1 [Data Collection](#data-collection)
+   - 3.2 [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
+   - 3.3 [Data Analysis](#data-analysis)
+   - 3.4 [Visualization with Power BI](#visualization-with-power-bi)
+   - 3.5 [Testing and Validation](#testing-and-validation)
+4. [Reproducibility: SQL and DAX Queries](#reproducibility-sql-and-dax-queries)
+   - 4.1 [Summary Dashboard](#summary-dashboard)
+     - [SQL Query: Loan Summary Data](#sql-query-loan-summary-data)
+     - [DAX Measures for Summary Dashboard](#dax-measures-for-summary-dashboard)
+   - 4.2 [Overview Dashboard](#overview-dashboard)
+     - [SQL Query: Loan Applications Trends](#sql-query-loan-applications-trends)
+     - [DAX Measures for Overview Dashboard](#dax-measures-for-overview-dashboard)
+   - 4.3 [Details Dashboard](#details-dashboard)
+     - [SQL Query: Detailed Loan Information](#sql-query-detailed-loan-information)
+     - [DAX Measures for Details Dashboard](#dax-measures-for-details-dashboard)
+5. [Key Findings](#key-findings)
+   - 5.1 [Loan Portfolio Performance](#loan-portfolio-performance)
+   - 5.2 [Risk Assessment](#risk-assessment)
+   - 5.3 [Profitability Analysis](#profitability-analysis)
+6. [Recommendations](#recommendations)
+   - 6.1 [Focus on High-Yield Products](#focus-on-high-yield-products)
+   - 6.2 [Targeted Marketing and Regional Strategy](#targeted-marketing-and-regional-strategy)
+   - 6.3 [Enhanced Risk Management](#enhanced-risk-management)
+   - 6.4 [Optimize Loan Terms](#optimize-loan-terms)
+   - 6.5 [Proactive Loan Monitoring](#proactive-loan-monitoring)
+   - 6.6 [Continuous Data Analysis and Improvement](#continuous-data-analysis-and-improvement)
+
 ## Objective
 
 This project aims to provide a comprehensive analysis of a financial institution's loan portfolio with the following key objectives:
