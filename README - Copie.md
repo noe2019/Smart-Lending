@@ -182,9 +182,6 @@ LoanStatusDistribution =
         "LoanCount", COUNT(LoanData[LoanID])
     )
 ```
-
-Sure, here's the continuation of the write-up for the fourth section, starting as you requested and including SQL and DAX query examples:
-
 ---
 
 ## 4. Loan Portfolio Demographics
@@ -354,9 +351,6 @@ TOPN (
 
 - **Deepen Market Penetration in High-Demand Areas**: Enhance the product offerings and marketing strategies in high-demand states to capture more of the existing market share.
 - **Develop Tailored Products for Low-Demand States**: Research the unique needs of borrowers in low-activity states and develop specialized financial products that address those needs, potentially opening new markets for growth.
-
-Here's the continuation for the fifth section, following the previously written fourth section, along with relevant SQL and DAX queries.
-
 ---
 
 ## 5. Loan Portfolio Health Assessment
