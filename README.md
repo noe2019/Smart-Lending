@@ -1,8 +1,5 @@
 # Bank Loan Portfolio Analysis and Reporting
 ---
-Here's a table of contents generated for the document titled "Bank Loan Portfolio Analysis and Reporting." This table of contents provides a structured overview, allowing readers to easily navigate through the key sections of the document.
-
----
 
 ### Table of Contents
 
